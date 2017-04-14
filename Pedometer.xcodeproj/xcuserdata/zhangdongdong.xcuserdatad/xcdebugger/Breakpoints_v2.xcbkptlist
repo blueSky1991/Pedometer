@@ -66,7 +66,7 @@
                   moduleName = "Pedometer"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/zhangdongdong/Desktop/product/Pedometer/Pedometer/PedometerManger.swift"
-                  timestampString = "513833848.487085"
+                  timestampString = "513840264.801501"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "76"
@@ -81,7 +81,7 @@
                   moduleName = "Pedometer"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/zhangdongdong/Desktop/product/Pedometer/Pedometer/PedometerManger.swift"
-                  timestampString = "513833848.488435"
+                  timestampString = "513840264.802993"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "78"
@@ -114,7 +114,7 @@
                   moduleName = "Pedometer"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/zhangdongdong/Desktop/product/Pedometer/Pedometer/PedometerManger.swift"
-                  timestampString = "513833848.495375"
+                  timestampString = "513840264.806343"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "41"
@@ -129,7 +129,7 @@
                   moduleName = "Pedometer"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/zhangdongdong/Desktop/product/Pedometer/Pedometer/PedometerManger.swift"
-                  timestampString = "513833848.496792"
+                  timestampString = "513840264.807724"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "43"
@@ -200,6 +200,134 @@
             startingLineNumber = "99"
             endingLineNumber = "99"
             landmarkName = "getStepCount(completion:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Pedometer/PedometerManger.swift"
+            timestampString = "513839688.607537"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "107"
+            endingLineNumber = "107"
+            landmarkName = "getDistance(compltion:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Pedometer/PedometerManger.swift"
+            timestampString = "513839691.510638"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "109"
+            endingLineNumber = "109"
+            landmarkName = "getDistance(compltion:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Pedometer/PedometerManger.swift"
+            timestampString = "513840042.284242"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "139"
+            endingLineNumber = "139"
+            landmarkName = "getDistance(compltion:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Pedometer/PedometerManger.swift"
+            timestampString = "513840071.489488"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "132"
+            endingLineNumber = "132"
+            landmarkName = "getDistance(compltion:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Pedometer/PedometerManger.swift"
+            timestampString = "513839771.267349"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "112"
+            endingLineNumber = "112"
+            landmarkName = "getDistance(compltion:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Pedometer.PedometerManger.getDistance (compltion : (Swift.Double, Swift.Optional&lt;Swift.Error&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "Pedometer"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/zhangdongdong/Desktop/product/Pedometer/Pedometer/PedometerManger.swift"
+                  timestampString = "513840264.836131"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "112"
+                  endingLineNumber = "112"
+                  offsetFromSymbolStart = "260">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Pedometer.PedometerManger.(getDistance (compltion : (Swift.Double, Swift.Optional&lt;Swift.Error&gt;) -&gt; ()) -&gt; ()).(closure #1)"
+                  moduleName = "Pedometer"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/zhangdongdong/Desktop/product/Pedometer/Pedometer/PedometerManger.swift"
+                  timestampString = "513840264.837763"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "114"
+                  endingLineNumber = "114"
+                  offsetFromSymbolStart = "36">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Pedometer/PedometerManger.swift"
+            timestampString = "513839773.235165"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "114"
+            endingLineNumber = "114"
+            landmarkName = "getDistance(compltion:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

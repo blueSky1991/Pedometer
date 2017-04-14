@@ -101,7 +101,7 @@ final class PedometerManger: NSObject {
     }
     
     //获取公里数
-    public func getDistance(compltion: @escaping (_ value:Double,_ error:NSError) -> Void){
+    public func getDistance(compltion: @escaping (Double,Error?) -> ()){
     
     
         let WalkingRunning = HKQuantityType.quantityType(forIdentifier: .distanceWalkingRunning)
@@ -112,7 +112,7 @@ final class PedometerManger: NSObject {
         let query = HKSampleQuery.init(sampleType:WalkingRunning!, predicate: predicateForSamplesToday(), limit: 0, sortDescriptors: [timeSortDescriptor]) { (query, results, error) in
             
             if (error != nil) {
-                compltion(0,error! as NSError)
+                compltion(0,error)
             }else{
                 
                 var  totleSteps:Double = 0.0;
@@ -120,13 +120,16 @@ final class PedometerManger: NSObject {
                 for i in 0 ..< (results?.count)! {
                     let quantitySample =  results?[i] as! HKQuantitySample
                     let quantity = quantitySample.quantity
-                    let heightUnit = HKUnit.count()
-                    let usersHeight = quantity.doubleValue(for:heightUnit)
+                    let kiloUnit = HKUnit.meterUnit(with: .kilo)
+                    let usersHeight = quantity.doubleValue(for: kiloUnit)
                     totleSteps += usersHeight
                     
                 }
                 
-                compltion(totleSteps,error! as NSError)
+
+                
+                
+                compltion(totleSteps,error)
             }
             
             

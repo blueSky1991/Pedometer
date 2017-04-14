@@ -18,6 +18,7 @@ class ViewController: UIViewController,UITextFieldDelegate {
     
     @IBOutlet weak var addStep: UIButton!
     
+    @IBOutlet weak var showDistance: UILabel!
     var manager : PedometerManger?
     var healthStore :HKHealthStore?
     
@@ -29,7 +30,6 @@ class ViewController: UIViewController,UITextFieldDelegate {
         self.stepNumer.borderStyle = .roundedRect
         self.stepNumer.keyboardType = .numberPad
         
-//        self.view.backgroundColor = UIColor.init(red: 0, green: 186/255.0, blue: 111/255.0, alpha: 0.9)
         
         
         
@@ -65,14 +65,12 @@ class ViewController: UIViewController,UITextFieldDelegate {
         
         self.stepNumer.endEditing(true)
         let stepType = HKQuantityType.quantityType(forIdentifier: .stepCount)
-        
         if HKHealthStore.isHealthDataAvailable() {
                 let stepQuantity = HKQuantity.init(unit: HKUnit.count(), doubleValue: Double(self.stepNumer.text!)!)
     
                  let stepSample = HKQuantitySample.init(type: stepType!, quantity: stepQuantity, start: Date.init(), end: Date.init())
             
                  self.healthStore?.save(stepSample, withCompletion: { (success, error) in
-                    
                     
                     if success {
                         
@@ -84,6 +82,7 @@ class ViewController: UIViewController,UITextFieldDelegate {
                                 (UIAlertAction) -> Void in
                                 self.stepNumer.text = ""
                                 self.getStepCount()
+                                
                             })
                             
                             alterView.addAction(okAction)
@@ -210,8 +209,20 @@ extension ViewController {
                             
                             strongSelf.showStep.text = "今日步数:"+String(value)
                 }
-        
+                
             })
+            
+            weakSelf?.manager?.getDistance(compltion: { (value, error) in
+                let strongSelf = self
+                
+                DispatchQueue.main.async {
+
+                   strongSelf.showDistance.text =  "今日公里:"+String.init(format: "%.2f", value)
+                }
+
+            })
+ 
+            
 
         }
 

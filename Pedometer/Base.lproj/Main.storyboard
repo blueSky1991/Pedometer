@@ -23,7 +23,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="60i-6o-tLi">
-                                <rect key="frame" x="53" y="68" width="269" height="43"/>
+                                <rect key="frame" x="53" y="68" width="143" height="43"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="43" id="BuW-DU-QJU"/>
                                 </constraints>
@@ -53,14 +53,26 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EqC-Y6-mUm">
+                                <rect key="frame" x="193" y="68" width="129" height="43"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="43" id="t0M-B7-ua4"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstAttribute="trailingMargin" secondItem="60i-6o-tLi" secondAttribute="trailing" constant="37" id="5I7-io-AGW"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="60i-6o-tLi" secondAttribute="trailing" constant="163" id="5I7-io-AGW"/>
                             <constraint firstItem="w3a-hD-XOh" firstAttribute="top" secondItem="60i-6o-tLi" secondAttribute="bottom" constant="55" id="9HG-1Q-loM"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="EqC-Y6-mUm" secondAttribute="trailing" constant="37" id="HvS-f9-esw"/>
                             <constraint firstAttribute="trailingMargin" secondItem="1Zc-bc-bgc" secondAttribute="trailing" constant="37" id="Lo7-MO-UUF"/>
                             <constraint firstItem="60i-6o-tLi" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="37" id="P3Z-jv-y2N"/>
                             <constraint firstItem="1Zc-bc-bgc" firstAttribute="top" secondItem="w3a-hD-XOh" secondAttribute="bottom" constant="38" id="StJ-OH-4ax"/>
+                            <constraint firstItem="EqC-Y6-mUm" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="177" id="WMT-qs-NO3"/>
+                            <constraint firstItem="EqC-Y6-mUm" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="48" id="bEL-QX-hwQ"/>
                             <constraint firstItem="60i-6o-tLi" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="48" id="d4J-sr-Gvb"/>
                             <constraint firstItem="1Zc-bc-bgc" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="37" id="jXi-U1-SBz"/>
                             <constraint firstAttribute="trailingMargin" secondItem="w3a-hD-XOh" secondAttribute="trailing" constant="37" id="jbv-gs-tBm"/>
@@ -71,13 +83,14 @@
                     <size key="freeformSize" width="375" height="667"/>
                     <connections>
                         <outlet property="addStep" destination="1Zc-bc-bgc" id="exr-Xk-Say"/>
+                        <outlet property="showDistance" destination="EqC-Y6-mUm" id="buN-cA-asK"/>
                         <outlet property="showStep" destination="60i-6o-tLi" id="dTu-fO-23S"/>
                         <outlet property="stepNumer" destination="w3a-hD-XOh" id="t9Q-oZ-IzX"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-10.4" y="73.313343328335833"/>
+            <point key="canvasLocation" x="-197.59999999999999" y="-135.38230884557723"/>
         </scene>
     </scenes>
 </document>
