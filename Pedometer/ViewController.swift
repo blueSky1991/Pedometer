@@ -29,6 +29,9 @@ class ViewController: UIViewController,UITextFieldDelegate {
         self.stepNumer.borderStyle = .roundedRect
         self.stepNumer.keyboardType = .numberPad
         
+//        self.view.backgroundColor = UIColor.init(red: 0, green: 186/255.0, blue: 111/255.0, alpha: 0.9)
+        
+        
         
         self.addStep.layer.borderWidth = 1
         self.addStep.layer.borderColor = UIColor.darkGray.cgColor

@@ -17,6 +17,7 @@
 		4A07EE031E9F59B10002389B /* PedometerManger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A07EE021E9F59B10002389B /* PedometerManger.swift */; };
 		4AD2EDA31EA06F6B00B82CD6 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 4AD2EDA21EA06F6B00B82CD6 /* icon.png */; };
 		4AD2EDB71EA072C100B82CD6 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4AD2EDB61EA072C100B82CD6 /* HealthKit.framework */; };
+		4AD2EDBA1EA0862C00B82CD6 /* timg.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 4AD2EDB91EA0862C00B82CD6 /* timg.jpeg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +55,7 @@
 		4AD2EDA21EA06F6B00B82CD6 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
 		4AD2EDB61EA072C100B82CD6 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
 		4AD2EDB81EA072EA00B82CD6 /* Pedometer.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Pedometer.entitlements; sourceTree = "<group>"; };
+		4AD2EDB91EA0862C00B82CD6 /* timg.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = timg.jpeg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +116,7 @@
 				4A07EDD81E9F56310002389B /* Main.storyboard */,
 				4A07EDDB1E9F56310002389B /* Assets.xcassets */,
 				4A07EDDD1E9F56310002389B /* LaunchScreen.storyboard */,
+				4AD2EDB91EA0862C00B82CD6 /* timg.jpeg */,
 				4A07EDE01E9F56310002389B /* Info.plist */,
 			);
 			path = Pedometer;
@@ -263,6 +266,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4AD2EDBA1EA0862C00B82CD6 /* timg.jpeg in Resources */,
 				4AD2EDA31EA06F6B00B82CD6 /* icon.png in Resources */,
 				4A07EDDF1E9F56310002389B /* LaunchScreen.storyboard in Resources */,
 				4A07EDDC1E9F56310002389B /* Assets.xcassets in Resources */,

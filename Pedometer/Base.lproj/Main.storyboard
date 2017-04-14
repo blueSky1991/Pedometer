@@ -33,6 +33,7 @@
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Zc-bc-bgc">
                                 <rect key="frame" x="53" y="234" width="269" height="30"/>
+                                <color key="backgroundColor" red="1" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="r5a-z6-k1t"/>
                                 </constraints>
@@ -43,7 +44,7 @@
                                     <action selector="addStepNumerAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nod-2V-FVN"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="      添加步数" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="w3a-hD-XOh">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="                   添加步数" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="w3a-hD-XOh">
                                 <rect key="frame" x="53" y="166" width="269" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="43P-LR-TB6"/>
