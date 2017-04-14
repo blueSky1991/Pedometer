@@ -13,14 +13,12 @@ class ViewController: UIViewController,UITextFieldDelegate {
     
     
     @IBOutlet weak var showStep: UILabel!
-    
     @IBOutlet weak var stepNumer: UITextField!
-    
     @IBOutlet weak var addStep: UIButton!
-    
     @IBOutlet weak var showDistance: UILabel!
     var manager : PedometerManger?
     var healthStore :HKHealthStore?
+    var player : SoundPlayer?
     
     
 
@@ -31,7 +29,7 @@ class ViewController: UIViewController,UITextFieldDelegate {
         self.stepNumer.keyboardType = .numberPad
         
         
-        
+        self.player = SoundPlayer.shareInstance
         
         self.addStep.layer.borderWidth = 1
         self.addStep.layer.borderColor = UIColor.darkGray.cgColor
@@ -207,8 +205,12 @@ extension ViewController {
                 
                          DispatchQueue.main.async {
                             
-                            strongSelf.showStep.text = "今日步数:"+String(value)
-                }
+                         strongSelf.showStep.text = "今日步数:"+String(value)
+                           
+                         let str = "厉害了我的哥今天奔跑了"+String(value)+"步,状态燃爆了"
+                            
+                         strongSelf.player?.play(string: str)
+                   }
                 
             })
             

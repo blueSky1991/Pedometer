@@ -18,6 +18,7 @@
 		4AD2EDA31EA06F6B00B82CD6 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 4AD2EDA21EA06F6B00B82CD6 /* icon.png */; };
 		4AD2EDB71EA072C100B82CD6 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4AD2EDB61EA072C100B82CD6 /* HealthKit.framework */; };
 		4AD2EDBA1EA0862C00B82CD6 /* timg.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 4AD2EDB91EA0862C00B82CD6 /* timg.jpeg */; };
+		4AD2EDBC1EA0A42000B82CD6 /* SoundPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AD2EDBB1EA0A42000B82CD6 /* SoundPlayer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +57,7 @@
 		4AD2EDB61EA072C100B82CD6 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
 		4AD2EDB81EA072EA00B82CD6 /* Pedometer.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Pedometer.entitlements; sourceTree = "<group>"; };
 		4AD2EDB91EA0862C00B82CD6 /* timg.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = timg.jpeg; sourceTree = "<group>"; };
+		4AD2EDBB1EA0A42000B82CD6 /* SoundPlayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SoundPlayer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +115,7 @@
 				4A07EDD41E9F56310002389B /* AppDelegate.swift */,
 				4A07EDD61E9F56310002389B /* ViewController.swift */,
 				4A07EE021E9F59B10002389B /* PedometerManger.swift */,
+				4AD2EDBB1EA0A42000B82CD6 /* SoundPlayer.swift */,
 				4A07EDD81E9F56310002389B /* Main.storyboard */,
 				4A07EDDB1E9F56310002389B /* Assets.xcassets */,
 				4A07EDDD1E9F56310002389B /* LaunchScreen.storyboard */,
@@ -297,6 +300,7 @@
 			files = (
 				4A07EDD71E9F56310002389B /* ViewController.swift in Sources */,
 				4A07EE031E9F59B10002389B /* PedometerManger.swift in Sources */,
+				4AD2EDBC1EA0A42000B82CD6 /* SoundPlayer.swift in Sources */,
 				4A07EDD51E9F56310002389B /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
