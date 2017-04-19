@@ -12,22 +12,28 @@ import HealthKit
 class ViewController: UIViewController,UITextFieldDelegate {
     
     
-    @IBOutlet weak var showStep: UILabel!
-    @IBOutlet weak var stepNumer: UITextField!
+
+   @IBOutlet  weak var stepNumer: UITextField!
     @IBOutlet weak var addStep: UIButton!
-    @IBOutlet weak var showDistance: UILabel!
+
     var manager : PedometerManger?
     var healthStore :HKHealthStore?
     var player : SoundPlayer?
     
-    
-
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        
+        
+        self.title  = "添加我的步数"
+        
+        
+        
+        
+        
         self.stepNumer.delegate = self
         self.stepNumer.borderStyle = .roundedRect
         self.stepNumer.keyboardType = .numberPad
-        
         
         self.player = SoundPlayer.shareInstance
         
@@ -59,8 +65,6 @@ class ViewController: UIViewController,UITextFieldDelegate {
         }
         
         
-        
-        
         self.stepNumer.endEditing(true)
         let stepType = HKQuantityType.quantityType(forIdentifier: .stepCount)
         if HKHealthStore.isHealthDataAvailable() {
@@ -68,6 +72,7 @@ class ViewController: UIViewController,UITextFieldDelegate {
     
                  let stepSample = HKQuantitySample.init(type: stepType!, quantity: stepQuantity, start: Date.init(), end: Date.init())
             
+
                  self.healthStore?.save(stepSample, withCompletion: { (success, error) in
                     
                     if success {
@@ -79,15 +84,12 @@ class ViewController: UIViewController,UITextFieldDelegate {
                             let okAction = UIAlertAction(title: "确定", style: .default, handler:{
                                 (UIAlertAction) -> Void in
                                 self.stepNumer.text = ""
-                                self.getStepCount()
                                 
                             })
                             
                             alterView.addAction(okAction)
                             self.present(alterView, animated: true, completion: nil)
-                            
-                            
-                            
+
                         }
 
                     
@@ -157,7 +159,7 @@ extension ViewController {
             self.healthStore?.requestAuthorization(toShare: write, read: read, completion: { (success, error) in
                 if success {
                     print("success")
-                      self.getStepCount()
+//                      self.getStepCount()
                 }
                 
             })
@@ -201,25 +203,25 @@ extension ViewController {
             
             weakSelf?.manager?.getStepCount(completion:{ (value, error) in
                 
-                        let strongSelf = self
+//                        let strongSelf = self
                 
                          DispatchQueue.main.async {
                             
-                         strongSelf.showStep.text = "今日步数:"+String(value)
+//                         strongSelf.showStep.text = "今日步数:"+String(value)
                            
-                         let str = "厉害了我的哥今天奔跑了"+String(value)+"步,状态燃爆了"
+//                         let str = "厉害了我的哥今天奔跑了"+String(value)+"步,状态燃爆了"
                             
-                         strongSelf.player?.play(string: str)
+//                         strongSelf.player?.play(string: str)
                    }
                 
             })
             
             weakSelf?.manager?.getDistance(compltion: { (value, error) in
-                let strongSelf = self
+//                let strongSelf = self
                 
                 DispatchQueue.main.async {
 
-                   strongSelf.showDistance.text =  "今日公里:"+String.init(format: "%.2f", value)
+//                   strongSelf.showDistance.text =  "今日公里:"+String.init(format: "%.2f", value)
                 }
 
             })

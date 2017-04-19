@@ -82,12 +82,12 @@ final class PedometerManger: NSObject {
                 var  totleSteps:Double = 0.0;
                 
                 for i in 0 ..< (results?.count)! {
+                    
                      let quantitySample =  results?[i] as! HKQuantitySample
                      let quantity = quantitySample.quantity
                      let heightUnit = HKUnit.count()
                      let usersHeight = quantity.doubleValue(for:heightUnit)
                      totleSteps += usersHeight
-                    
                 }
                 
                 

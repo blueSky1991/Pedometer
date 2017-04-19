@@ -15,10 +15,23 @@
 		4A07EDEA1E9F56320002389B /* PedometerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A07EDE91E9F56320002389B /* PedometerTests.swift */; };
 		4A07EDF51E9F56320002389B /* PedometerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A07EDF41E9F56320002389B /* PedometerUITests.swift */; };
 		4A07EE031E9F59B10002389B /* PedometerManger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A07EE021E9F59B10002389B /* PedometerManger.swift */; };
+		4A0E42391EA5A75700EB8BF1 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A0E42371EA5A75700EB8BF1 /* BaseViewController.swift */; };
+		4A0E423A1EA5A75700EB8BF1 /* BaseViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4A0E42381EA5A75700EB8BF1 /* BaseViewController.xib */; };
+		4A0E423D1EA5A8BE00EB8BF1 /* ShowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A0E423B1EA5A8BE00EB8BF1 /* ShowController.swift */; };
+		4A0E423E1EA5A8BE00EB8BF1 /* ShowController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4A0E423C1EA5A8BE00EB8BF1 /* ShowController.xib */; };
+		4A0E42401EA5AA3500EB8BF1 /* CirclePercentageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A0E423F1EA5AA3500EB8BF1 /* CirclePercentageView.swift */; };
+		4A0E42441EA6029D00EB8BF1 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A0E42431EA6029D00EB8BF1 /* UIColor+Extension.swift */; };
+		4A71F4981EA74C8F00D4978B /* StepModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A71F4971EA74C8F00D4978B /* StepModel.swift */; };
 		4AD2EDA31EA06F6B00B82CD6 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 4AD2EDA21EA06F6B00B82CD6 /* icon.png */; };
 		4AD2EDB71EA072C100B82CD6 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4AD2EDB61EA072C100B82CD6 /* HealthKit.framework */; };
 		4AD2EDBA1EA0862C00B82CD6 /* timg.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 4AD2EDB91EA0862C00B82CD6 /* timg.jpeg */; };
 		4AD2EDBC1EA0A42000B82CD6 /* SoundPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AD2EDBB1EA0A42000B82CD6 /* SoundPlayer.swift */; };
+		4AD2EDC21EA0C2DD00B82CD6 /* icon_28.png in Resources */ = {isa = PBXBuildFile; fileRef = 4AD2EDC01EA0C2DD00B82CD6 /* icon_28.png */; };
+		4AD2EDC31EA0C2DD00B82CD6 /* icon_108.png in Resources */ = {isa = PBXBuildFile; fileRef = 4AD2EDC11EA0C2DD00B82CD6 /* icon_108.png */; };
+		4AD2EDC91EA0C34400B82CD6 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AD2EDC71EA0C34400B82CD6 /* LoginViewController.swift */; };
+		4AD2EDCA1EA0C34400B82CD6 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4AD2EDC81EA0C34400B82CD6 /* LoginViewController.xib */; };
+		4AD2EDD51EA0C7FA00B82CD6 /* libWeChatSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4AD2EDD01EA0C7FA00B82CD6 /* libWeChatSDK.a */; };
+		4AD2EDD61EA0C7FA00B82CD6 /* README.txt in Resources */ = {isa = PBXBuildFile; fileRef = 4AD2EDD11EA0C7FA00B82CD6 /* README.txt */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,11 +66,27 @@
 		4A07EDF41E9F56320002389B /* PedometerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PedometerUITests.swift; sourceTree = "<group>"; };
 		4A07EDF61E9F56320002389B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4A07EE021E9F59B10002389B /* PedometerManger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PedometerManger.swift; sourceTree = "<group>"; };
+		4A0E42371EA5A75700EB8BF1 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		4A0E42381EA5A75700EB8BF1 /* BaseViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BaseViewController.xib; sourceTree = "<group>"; };
+		4A0E423B1EA5A8BE00EB8BF1 /* ShowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShowController.swift; sourceTree = "<group>"; };
+		4A0E423C1EA5A8BE00EB8BF1 /* ShowController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ShowController.xib; sourceTree = "<group>"; };
+		4A0E423F1EA5AA3500EB8BF1 /* CirclePercentageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CirclePercentageView.swift; sourceTree = "<group>"; };
+		4A0E42431EA6029D00EB8BF1 /* UIColor+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
+		4A71F4971EA74C8F00D4978B /* StepModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StepModel.swift; sourceTree = "<group>"; };
 		4AD2EDA21EA06F6B00B82CD6 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
 		4AD2EDB61EA072C100B82CD6 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
 		4AD2EDB81EA072EA00B82CD6 /* Pedometer.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Pedometer.entitlements; sourceTree = "<group>"; };
 		4AD2EDB91EA0862C00B82CD6 /* timg.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = timg.jpeg; sourceTree = "<group>"; };
 		4AD2EDBB1EA0A42000B82CD6 /* SoundPlayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SoundPlayer.swift; sourceTree = "<group>"; };
+		4AD2EDC01EA0C2DD00B82CD6 /* icon_28.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_28.png; sourceTree = "<group>"; };
+		4AD2EDC11EA0C2DD00B82CD6 /* icon_108.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_108.png; sourceTree = "<group>"; };
+		4AD2EDC71EA0C34400B82CD6 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		4AD2EDC81EA0C34400B82CD6 /* LoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
+		4AD2EDD01EA0C7FA00B82CD6 /* libWeChatSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libWeChatSDK.a; sourceTree = "<group>"; };
+		4AD2EDD11EA0C7FA00B82CD6 /* README.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.txt; sourceTree = "<group>"; };
+		4AD2EDD21EA0C7FA00B82CD6 /* WechatAuthSDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WechatAuthSDK.h; sourceTree = "<group>"; };
+		4AD2EDD31EA0C7FA00B82CD6 /* WXApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXApi.h; sourceTree = "<group>"; };
+		4AD2EDD41EA0C7FA00B82CD6 /* WXApiObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXApiObject.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +94,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4AD2EDD51EA0C7FA00B82CD6 /* libWeChatSDK.a in Frameworks */,
 				4AD2EDB71EA072C100B82CD6 /* HealthKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -110,17 +140,13 @@
 		4A07EDD31E9F56310002389B /* Pedometer */ = {
 			isa = PBXGroup;
 			children = (
-				4AD2EDB81EA072EA00B82CD6 /* Pedometer.entitlements */,
-				4AD2EDA21EA06F6B00B82CD6 /* icon.png */,
-				4A07EDD41E9F56310002389B /* AppDelegate.swift */,
-				4A07EDD61E9F56310002389B /* ViewController.swift */,
-				4A07EE021E9F59B10002389B /* PedometerManger.swift */,
-				4AD2EDBB1EA0A42000B82CD6 /* SoundPlayer.swift */,
-				4A07EDD81E9F56310002389B /* Main.storyboard */,
-				4A07EDDB1E9F56310002389B /* Assets.xcassets */,
-				4A07EDDD1E9F56310002389B /* LaunchScreen.storyboard */,
-				4AD2EDB91EA0862C00B82CD6 /* timg.jpeg */,
-				4A07EDE01E9F56310002389B /* Info.plist */,
+				4A0E42361EA5A72100EB8BF1 /* Base */,
+				4A0E42321EA5A66000EB8BF1 /* ShowView */,
+				4AD2EDCE1EA0C7E800B82CD6 /* Vender */,
+				4AD2EDC61EA0C33300B82CD6 /* Login */,
+				4AD2EDC51EA0C31500B82CD6 /* Home */,
+				4AD2EDC41EA0C30600B82CD6 /* Tool */,
+				4AD2EDBF1EA0C1F500B82CD6 /* Other */,
 			);
 			path = Pedometer;
 			sourceTree = "<group>";
@@ -149,6 +175,138 @@
 				4AD2EDB61EA072C100B82CD6 /* HealthKit.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4A0E42321EA5A66000EB8BF1 /* ShowView */ = {
+			isa = PBXGroup;
+			children = (
+				4A0E42351EA5A6B300EB8BF1 /* View */,
+				4A0E42341EA5A69800EB8BF1 /* Model */,
+				4A0E42331EA5A68200EB8BF1 /* Controller */,
+			);
+			path = ShowView;
+			sourceTree = "<group>";
+		};
+		4A0E42331EA5A68200EB8BF1 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				4A0E423B1EA5A8BE00EB8BF1 /* ShowController.swift */,
+				4A0E423C1EA5A8BE00EB8BF1 /* ShowController.xib */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		4A0E42341EA5A69800EB8BF1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		4A0E42351EA5A6B300EB8BF1 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4A0E423F1EA5AA3500EB8BF1 /* CirclePercentageView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		4A0E42361EA5A72100EB8BF1 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				4A0E42371EA5A75700EB8BF1 /* BaseViewController.swift */,
+				4A0E42381EA5A75700EB8BF1 /* BaseViewController.xib */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		4AD2EDBF1EA0C1F500B82CD6 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				4A07EDD41E9F56310002389B /* AppDelegate.swift */,
+				4A71F4971EA74C8F00D4978B /* StepModel.swift */,
+				4AD2EDC01EA0C2DD00B82CD6 /* icon_28.png */,
+				4AD2EDC11EA0C2DD00B82CD6 /* icon_108.png */,
+				4AD2EDA21EA06F6B00B82CD6 /* icon.png */,
+				4AD2EDB91EA0862C00B82CD6 /* timg.jpeg */,
+				4AD2EDB81EA072EA00B82CD6 /* Pedometer.entitlements */,
+				4A07EDDB1E9F56310002389B /* Assets.xcassets */,
+				4A07EDDD1E9F56310002389B /* LaunchScreen.storyboard */,
+				4A07EDE01E9F56310002389B /* Info.plist */,
+			);
+			name = Other;
+			sourceTree = "<group>";
+		};
+		4AD2EDC41EA0C30600B82CD6 /* Tool */ = {
+			isa = PBXGroup;
+			children = (
+				4A07EE021E9F59B10002389B /* PedometerManger.swift */,
+				4AD2EDBB1EA0A42000B82CD6 /* SoundPlayer.swift */,
+				4A0E42431EA6029D00EB8BF1 /* UIColor+Extension.swift */,
+			);
+			name = Tool;
+			sourceTree = "<group>";
+		};
+		4AD2EDC51EA0C31500B82CD6 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				4A07EDD61E9F56310002389B /* ViewController.swift */,
+				4A07EDD81E9F56310002389B /* Main.storyboard */,
+			);
+			name = Home;
+			sourceTree = "<group>";
+		};
+		4AD2EDC61EA0C33300B82CD6 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				4AD2EDCD1EA0C6F000B82CD6 /* View */,
+				4AD2EDCC1EA0C6EA00B82CD6 /* Model */,
+				4AD2EDCB1EA0C6DB00B82CD6 /* Controller */,
+			);
+			name = Login;
+			sourceTree = "<group>";
+		};
+		4AD2EDCB1EA0C6DB00B82CD6 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				4AD2EDC71EA0C34400B82CD6 /* LoginViewController.swift */,
+				4AD2EDC81EA0C34400B82CD6 /* LoginViewController.xib */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		4AD2EDCC1EA0C6EA00B82CD6 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		4AD2EDCD1EA0C6F000B82CD6 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		4AD2EDCE1EA0C7E800B82CD6 /* Vender */ = {
+			isa = PBXGroup;
+			children = (
+				4AD2EDCF1EA0C7FA00B82CD6 /* OpenSDK1.7.7 */,
+			);
+			name = Vender;
+			sourceTree = "<group>";
+		};
+		4AD2EDCF1EA0C7FA00B82CD6 /* OpenSDK1.7.7 */ = {
+			isa = PBXGroup;
+			children = (
+				4AD2EDD01EA0C7FA00B82CD6 /* libWeChatSDK.a */,
+				4AD2EDD11EA0C7FA00B82CD6 /* README.txt */,
+				4AD2EDD21EA0C7FA00B82CD6 /* WechatAuthSDK.h */,
+				4AD2EDD31EA0C7FA00B82CD6 /* WXApi.h */,
+				4AD2EDD41EA0C7FA00B82CD6 /* WXApiObject.h */,
+			);
+			path = OpenSDK1.7.7;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -269,10 +427,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4AD2EDCA1EA0C34400B82CD6 /* LoginViewController.xib in Resources */,
+				4A0E423A1EA5A75700EB8BF1 /* BaseViewController.xib in Resources */,
+				4A0E423E1EA5A8BE00EB8BF1 /* ShowController.xib in Resources */,
+				4AD2EDD61EA0C7FA00B82CD6 /* README.txt in Resources */,
 				4AD2EDBA1EA0862C00B82CD6 /* timg.jpeg in Resources */,
+				4AD2EDC31EA0C2DD00B82CD6 /* icon_108.png in Resources */,
 				4AD2EDA31EA06F6B00B82CD6 /* icon.png in Resources */,
 				4A07EDDF1E9F56310002389B /* LaunchScreen.storyboard in Resources */,
 				4A07EDDC1E9F56310002389B /* Assets.xcassets in Resources */,
+				4AD2EDC21EA0C2DD00B82CD6 /* icon_28.png in Resources */,
 				4A07EDDA1E9F56310002389B /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -298,10 +462,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4A0E42401EA5AA3500EB8BF1 /* CirclePercentageView.swift in Sources */,
+				4A71F4981EA74C8F00D4978B /* StepModel.swift in Sources */,
+				4A0E423D1EA5A8BE00EB8BF1 /* ShowController.swift in Sources */,
 				4A07EDD71E9F56310002389B /* ViewController.swift in Sources */,
+				4A0E42441EA6029D00EB8BF1 /* UIColor+Extension.swift in Sources */,
 				4A07EE031E9F59B10002389B /* PedometerManger.swift in Sources */,
 				4AD2EDBC1EA0A42000B82CD6 /* SoundPlayer.swift in Sources */,
+				4AD2EDC91EA0C34400B82CD6 /* LoginViewController.swift in Sources */,
 				4A07EDD51E9F56310002389B /* AppDelegate.swift in Sources */,
+				4A0E42391EA5A75700EB8BF1 /* BaseViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -460,6 +630,10 @@
 				INFOPLIST_FILE = Pedometer/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Pedometer/OpenSDK1.7.7",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.pkuhit.PocketPharmacy.offline;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
@@ -476,6 +650,10 @@
 				INFOPLIST_FILE = Pedometer/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Pedometer/OpenSDK1.7.7",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.pkuhit.PocketPharmacy.offline;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
