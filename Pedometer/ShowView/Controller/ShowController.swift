@@ -29,6 +29,8 @@ class ShowController: BaseViewController {
 
     
     
+    
+    
     var stepCounter : CMPedometer?
     var activityManager : CMMotionActivityManager?
     
@@ -38,13 +40,21 @@ class ShowController: BaseViewController {
         getData()
         getStatues()
         addEveryDayTotal()
-
+        
+        
         self.timer = Timer(timeInterval: 60, target: self, selector: #selector(getData), userInfo: nil, repeats: true)
         RunLoop.current.add(self.timer!, forMode: .defaultRunLoopMode)
         
     }
 
 
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        getData()
+    }
+    
+    
 }
 
 
@@ -57,7 +67,7 @@ extension ShowController{
         
         addItem()
         
-        self.operationQueue = OperationQueue.main
+        self.operationQueue = OperationQueue.init()
         self.stepCounter = CMPedometer()
         self.activityManager = CMMotionActivityManager()
         
@@ -158,7 +168,6 @@ extension ShowController{
             
             status = "开车"
             
-            
         }
         
         if activity.unknown   {
@@ -220,7 +229,9 @@ extension ShowController {
     
     func settingBtn(btn:UIButton){
         
-        self.navigationController?.pushViewController(ViewController(), animated: true)
+        let viewContr = ViewController()
+        
+        self.navigationController?.pushViewController(viewContr, animated: true)
     
     }
     
