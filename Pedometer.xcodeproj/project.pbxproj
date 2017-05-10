@@ -20,17 +20,16 @@
 		4A0E423E1EA5A8BE00EB8BF1 /* ShowController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4A0E423C1EA5A8BE00EB8BF1 /* ShowController.xib */; };
 		4A0E42401EA5AA3500EB8BF1 /* CirclePercentageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A0E423F1EA5AA3500EB8BF1 /* CirclePercentageView.swift */; };
 		4A0E42441EA6029D00EB8BF1 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A0E42431EA6029D00EB8BF1 /* UIColor+Extension.swift */; };
+		4A17E0121EC1528900048D7F /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A17E0111EC1528900048D7F /* HealthKit.framework */; settings = {ATTRIBUTES = (Required, ); }; };
 		4A71F4981EA74C8F00D4978B /* StepModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A71F4971EA74C8F00D4978B /* StepModel.swift */; };
+		4ABE39991EADD59A001D979D /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4ABE39981EADD59A001D979D /* AVFoundation.framework */; settings = {ATTRIBUTES = (Required, ); }; };
 		4AD2EDA31EA06F6B00B82CD6 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 4AD2EDA21EA06F6B00B82CD6 /* icon.png */; };
-		4AD2EDB71EA072C100B82CD6 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4AD2EDB61EA072C100B82CD6 /* HealthKit.framework */; };
 		4AD2EDBA1EA0862C00B82CD6 /* timg.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 4AD2EDB91EA0862C00B82CD6 /* timg.jpeg */; };
 		4AD2EDBC1EA0A42000B82CD6 /* SoundPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AD2EDBB1EA0A42000B82CD6 /* SoundPlayer.swift */; };
 		4AD2EDC21EA0C2DD00B82CD6 /* icon_28.png in Resources */ = {isa = PBXBuildFile; fileRef = 4AD2EDC01EA0C2DD00B82CD6 /* icon_28.png */; };
 		4AD2EDC31EA0C2DD00B82CD6 /* icon_108.png in Resources */ = {isa = PBXBuildFile; fileRef = 4AD2EDC11EA0C2DD00B82CD6 /* icon_108.png */; };
 		4AD2EDC91EA0C34400B82CD6 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AD2EDC71EA0C34400B82CD6 /* LoginViewController.swift */; };
 		4AD2EDCA1EA0C34400B82CD6 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4AD2EDC81EA0C34400B82CD6 /* LoginViewController.xib */; };
-		4AD2EDD51EA0C7FA00B82CD6 /* libWeChatSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4AD2EDD01EA0C7FA00B82CD6 /* libWeChatSDK.a */; };
-		4AD2EDD61EA0C7FA00B82CD6 /* README.txt in Resources */ = {isa = PBXBuildFile; fileRef = 4AD2EDD11EA0C7FA00B82CD6 /* README.txt */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,21 +69,17 @@
 		4A0E423C1EA5A8BE00EB8BF1 /* ShowController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ShowController.xib; sourceTree = "<group>"; };
 		4A0E423F1EA5AA3500EB8BF1 /* CirclePercentageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CirclePercentageView.swift; sourceTree = "<group>"; };
 		4A0E42431EA6029D00EB8BF1 /* UIColor+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
+		4A17E0101EC1528900048D7F /* Pedometer.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Pedometer.entitlements; sourceTree = "<group>"; };
+		4A17E0111EC1528900048D7F /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
 		4A71F4971EA74C8F00D4978B /* StepModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StepModel.swift; sourceTree = "<group>"; };
+		4ABE39981EADD59A001D979D /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		4AD2EDA21EA06F6B00B82CD6 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
-		4AD2EDB61EA072C100B82CD6 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
-		4AD2EDB81EA072EA00B82CD6 /* Pedometer.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Pedometer.entitlements; sourceTree = "<group>"; };
 		4AD2EDB91EA0862C00B82CD6 /* timg.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = timg.jpeg; sourceTree = "<group>"; };
 		4AD2EDBB1EA0A42000B82CD6 /* SoundPlayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SoundPlayer.swift; sourceTree = "<group>"; };
 		4AD2EDC01EA0C2DD00B82CD6 /* icon_28.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_28.png; sourceTree = "<group>"; };
 		4AD2EDC11EA0C2DD00B82CD6 /* icon_108.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_108.png; sourceTree = "<group>"; };
 		4AD2EDC71EA0C34400B82CD6 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		4AD2EDC81EA0C34400B82CD6 /* LoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
-		4AD2EDD01EA0C7FA00B82CD6 /* libWeChatSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libWeChatSDK.a; sourceTree = "<group>"; };
-		4AD2EDD11EA0C7FA00B82CD6 /* README.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.txt; sourceTree = "<group>"; };
-		4AD2EDD21EA0C7FA00B82CD6 /* WechatAuthSDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WechatAuthSDK.h; sourceTree = "<group>"; };
-		4AD2EDD31EA0C7FA00B82CD6 /* WXApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXApi.h; sourceTree = "<group>"; };
-		4AD2EDD41EA0C7FA00B82CD6 /* WXApiObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXApiObject.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,8 +87,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4AD2EDD51EA0C7FA00B82CD6 /* libWeChatSDK.a in Frameworks */,
-				4AD2EDB71EA072C100B82CD6 /* HealthKit.framework in Frameworks */,
+				4ABE39991EADD59A001D979D /* AVFoundation.framework in Frameworks */,
+				4A17E0121EC1528900048D7F /* HealthKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,6 +133,7 @@
 		4A07EDD31E9F56310002389B /* Pedometer */ = {
 			isa = PBXGroup;
 			children = (
+				4A17E0101EC1528900048D7F /* Pedometer.entitlements */,
 				4A0E42361EA5A72100EB8BF1 /* Base */,
 				4A0E42321EA5A66000EB8BF1 /* ShowView */,
 				4AD2EDCE1EA0C7E800B82CD6 /* Vender */,
@@ -170,7 +166,8 @@
 		4A07EE051E9F89580002389B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				4AD2EDB61EA072C100B82CD6 /* HealthKit.framework */,
+				4A17E0111EC1528900048D7F /* HealthKit.framework */,
+				4ABE39981EADD59A001D979D /* AVFoundation.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -227,7 +224,6 @@
 				4AD2EDC11EA0C2DD00B82CD6 /* icon_108.png */,
 				4AD2EDA21EA06F6B00B82CD6 /* icon.png */,
 				4AD2EDB91EA0862C00B82CD6 /* timg.jpeg */,
-				4AD2EDB81EA072EA00B82CD6 /* Pedometer.entitlements */,
 				4A07EDDB1E9F56310002389B /* Assets.xcassets */,
 				4A07EDDD1E9F56310002389B /* LaunchScreen.storyboard */,
 				4A07EDE01E9F56310002389B /* Info.plist */,
@@ -289,21 +285,8 @@
 		4AD2EDCE1EA0C7E800B82CD6 /* Vender */ = {
 			isa = PBXGroup;
 			children = (
-				4AD2EDCF1EA0C7FA00B82CD6 /* OpenSDK1.7.7 */,
 			);
 			name = Vender;
-			sourceTree = "<group>";
-		};
-		4AD2EDCF1EA0C7FA00B82CD6 /* OpenSDK1.7.7 */ = {
-			isa = PBXGroup;
-			children = (
-				4AD2EDD01EA0C7FA00B82CD6 /* libWeChatSDK.a */,
-				4AD2EDD11EA0C7FA00B82CD6 /* README.txt */,
-				4AD2EDD21EA0C7FA00B82CD6 /* WechatAuthSDK.h */,
-				4AD2EDD31EA0C7FA00B82CD6 /* WXApi.h */,
-				4AD2EDD41EA0C7FA00B82CD6 /* WXApiObject.h */,
-			);
-			path = OpenSDK1.7.7;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -374,7 +357,7 @@
 				TargetAttributes = {
 					4A07EDD01E9F56310002389B = {
 						CreatedOnToolsVersion = 8.3.1;
-						DevelopmentTeam = 8744YXXV24;
+						DevelopmentTeam = BQ7F5XB2U3;
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.HealthKit = {
@@ -427,7 +410,6 @@
 				4AD2EDCA1EA0C34400B82CD6 /* LoginViewController.xib in Resources */,
 				4A0E423A1EA5A75700EB8BF1 /* BaseViewController.xib in Resources */,
 				4A0E423E1EA5A8BE00EB8BF1 /* ShowController.xib in Resources */,
-				4AD2EDD61EA0C7FA00B82CD6 /* README.txt in Resources */,
 				4AD2EDBA1EA0862C00B82CD6 /* timg.jpeg in Resources */,
 				4AD2EDC31EA0C2DD00B82CD6 /* icon_108.png in Resources */,
 				4AD2EDA31EA06F6B00B82CD6 /* icon.png in Resources */,
@@ -517,6 +499,7 @@
 		4A07EDF71E9F56320002389B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
@@ -568,6 +551,7 @@
 		4A07EDF81E9F56320002389B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
@@ -612,17 +596,20 @@
 		4A07EDFA1E9F56320002389B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_SEARCH_USER_PATHS = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = Pedometer/Pedometer.entitlements;
-				DEVELOPMENT_TEAM = 8744YXXV24;
+				DEVELOPMENT_TEAM = BQ7F5XB2U3;
+				EMBED_ASSET_PACKS_IN_PRODUCT_BUNDLE = YES;
 				INFOPLIST_FILE = Pedometer/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @loader_path/Frameworks @executable_path/Frameworks @executable_path";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Pedometer/OpenSDK1.7.7",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.pkuhit.PocketPharmacy.offline;
+				PRODUCT_BUNDLE_IDENTIFIER = com.zhangdongdong.Pedometer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -632,17 +619,20 @@
 		4A07EDFB1E9F56320002389B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_SEARCH_USER_PATHS = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = Pedometer/Pedometer.entitlements;
-				DEVELOPMENT_TEAM = 8744YXXV24;
+				DEVELOPMENT_TEAM = BQ7F5XB2U3;
+				EMBED_ASSET_PACKS_IN_PRODUCT_BUNDLE = YES;
 				INFOPLIST_FILE = Pedometer/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @loader_path/Frameworks @executable_path/Frameworks @executable_path";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Pedometer/OpenSDK1.7.7",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.pkuhit.PocketPharmacy.offline;
+				PRODUCT_BUNDLE_IDENTIFIER = com.zhangdongdong.Pedometer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = 1;

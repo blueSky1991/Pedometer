@@ -12,13 +12,6 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-//    NSMutableArray *arrAll;                 // 加速度传感器采集的原始数组
-//    int record_no_save;
-//    int record_no;
-//    NSDate *lastDate;
-//    
-//    let arrAll
-
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
@@ -27,8 +20,134 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         self.window?.backgroundColor = UIColor.white
         self.window?.rootViewController = UINavigationController.init(rootViewController: ShowController())
         self.window?.makeKeyAndVisible()
+        
+        
+        NotificationCenter.default.addObserver(forName: NSNotification.Name.UIApplicationUserDidTakeScreenshot, object: nil, queue: OperationQueue.main) { (notification:Notification) in
+            
+    
+            let alter =   UIAlertController(title: "警告", message: "用户数据为私有,禁止泄露,再次截屏将封号处理", preferredStyle: .alert)
+            let okAction = UIAlertAction(title: "知道了", style: .default, handler: { (action:UIAlertAction) in
+                
+                self.userDidTakeScreenshot(notification: notification as NSNotification)
+            })
+            
+            alter.addAction(okAction)
+            
+            self.window?.rootViewController?.present(alter, animated: true, completion: nil)
+            
+        }
+        
+    
         return true
     }
+    
+    
+    func userDidTakeScreenshot(notification:NSNotification) -> Void {
+        
+        
+//        NSLog(@"检测到截屏");
+        print("检测用户截屏")
+//        
+       //人为截屏, 模拟用户截屏行为, 获取所截图片
+           let image = imageWithScreenshot()
+            //添加显示
+           let imageView = UIImageView.init(image: image)
+           let imgNum = (self.window?.frame.size.width)!/2
+          imageView.frame = CGRect(x: imgNum, y: imgNum, width: imgNum, height: imgNum)
+
+
+        //添加边框
+        imageView.layer.borderColor = UIColor.white.cgColor
+        imageView.layer.borderWidth = 5.0
+        
+        
+
+//        //添加四个边阴影
+        imageView.layer.shadowColor = UIColor.black.cgColor
+        imageView.layer.shadowOffset = CGSize(width: 0, height: 0)
+        imageView.layer.shadowOpacity = 0.5
+        imageView.layer.shadowRadius = 10.0
+//        //添加两个边阴影
+        imageView.layer.shadowColor = UIColor.black.cgColor
+        imageView.layer.shadowOffset = CGSize(width: 4, height: 4)
+        imageView.layer.shadowOpacity = 0.5
+        imageView.layer.shadowRadius = 2.0
+        
+        self.window?.addSubview(imageView)
+
+        
+        self.perform( #selector(imageView.removeFromSuperview), with: nil, afterDelay: 5)
+        
+    }
+    
+    func imageWithScreenshot() -> UIImage {
+        
+        let data = dataWithScreenshotInPNGFormat()
+        
+        return UIImage.init(data: data )!
+    }
+    
+    
+    
+    func dataWithScreenshotInPNGFormat() -> Data {
+        
+        
+        let width =  UIScreen.main.bounds.size.width
+        let height = UIScreen.main.bounds.size.height
+        var imageSize = CGSize.zero
+        let orientation = UIApplication.shared.statusBarOrientation
+        
+        if UIInterfaceOrientationIsPortrait(orientation) {
+             imageSize = UIScreen.main.bounds.size
+        }else {
+             imageSize = CGSize(width: height, height: width)
+        }
+        
+        
+        
+        UIGraphicsBeginImageContextWithOptions(imageSize, false, 0)
+        let  context:CGContext = UIGraphicsGetCurrentContext()!
+        for window:UIWindow in UIApplication.shared.windows {
+            context.saveGState()
+            context.translateBy(x: window.center.x, y: window.center.y)
+            context.concatenate(window.transform)
+            context.translateBy(x: -window.bounds.size.width * window.layer.anchorPoint.x, y: -window.bounds.size.height * window.layer.anchorPoint.y)
+            
+            if orientation == UIInterfaceOrientation.landscapeLeft  {
+                context.rotate(by: CGFloat(Double.pi/2))
+                context.translateBy(x: 0, y: -imageSize.width)
+            }else if orientation == UIInterfaceOrientation.landscapeRight  {
+                
+                context.rotate(by: -CGFloat(Double.pi/2))
+                context.translateBy(x: -imageSize.width, y: 0)
+            }else if orientation == UIInterfaceOrientation.portraitUpsideDown {
+                
+                context.rotate(by: CGFloat(Double.pi))
+                context.translateBy(x: -imageSize.width, y: -imageSize.height)
+            }
+            
+            if window.responds(to:#selector(window.drawHierarchy(in:afterScreenUpdates:))) {
+                window.drawHierarchy(in: window.bounds, afterScreenUpdates: true)
+            }else{
+                window.layer.render(in: context)
+            }
+            
+            context.restoreGState()
+            
+
+        }
+        
+        let image = UIGraphicsGetImageFromCurrentImageContext()
+        UIGraphicsEndImageContext()
+        
+        return UIImagePNGRepresentation(image!)!
+    }
+    
+    
+    
+    
+    
+    
 
     func applicationWillResignActive(_ application: UIApplication) {
         // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
@@ -52,6 +171,18 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
 
+    
+    
+    
+    
+    func application(_ application: UIApplication, performActionFor shortcutItem: UIApplicationShortcutItem, completionHandler: @escaping (Bool) -> Void) {
+        
+        
+        print(shortcutItem.type)
+        
+    }
+    
+    
 
 }
 

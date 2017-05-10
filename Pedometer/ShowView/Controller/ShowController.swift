@@ -28,9 +28,6 @@ class ShowController: BaseViewController {
     let ScreenWidth = UIScreen.main.bounds.size.width
 
     
-    
-    
-    
     var stepCounter : CMPedometer?
     var activityManager : CMMotionActivityManager?
     
