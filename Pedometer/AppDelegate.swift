@@ -18,26 +18,31 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         self.window = UIWindow.init(frame: UIScreen.main.bounds)
         self.window?.backgroundColor = UIColor.white
-        self.window?.rootViewController = UINavigationController.init(rootViewController: ShowController())
+        self.window?.rootViewController =  LoginController()
         self.window?.makeKeyAndVisible()
         
-        
         NotificationCenter.default.addObserver(forName: NSNotification.Name.UIApplicationUserDidTakeScreenshot, object: nil, queue: OperationQueue.main) { (notification:Notification) in
-            
-    
             let alter =   UIAlertController(title: "警告", message: "用户数据为私有,禁止泄露,再次截屏将封号处理", preferredStyle: .alert)
             let okAction = UIAlertAction(title: "知道了", style: .default, handler: { (action:UIAlertAction) in
-                
                 self.userDidTakeScreenshot(notification: notification as NSNotification)
             })
-            
             alter.addAction(okAction)
-            
             self.window?.rootViewController?.present(alter, animated: true, completion: nil)
-            
         }
         
+        
     
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
         return true
     }
     
