@@ -8,11 +8,14 @@
 
 import UIKit
 import HealthKit
+import AVFoundation
+import MediaPlayer
+import AVKit
 
 class ViewController: UIViewController,UITextFieldDelegate {
     
     
-
+  var templayer:AVPlayerViewController?
       var stepNumer: UITextField!
       var addStep: UIButton!
 
@@ -23,7 +26,7 @@ class ViewController: UIViewController,UITextFieldDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-    
+
         self.title  = "添加我的步数"
         initUI()
         getCompetence()

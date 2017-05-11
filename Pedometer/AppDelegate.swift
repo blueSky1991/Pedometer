@@ -13,7 +13,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
-
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         
         self.window = UIWindow.init(frame: UIScreen.main.bounds)
@@ -29,18 +28,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             alter.addAction(okAction)
             self.window?.rootViewController?.present(alter, animated: true, completion: nil)
         }
-        
-        
-    
-        
-        
-        
-        
-        
-        
-        
-        
-        
         
         
         return true
@@ -64,7 +51,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         //添加边框
         imageView.layer.borderColor = UIColor.white.cgColor
         imageView.layer.borderWidth = 5.0
-        
         
 
 //        //添加四个边阴影
@@ -176,9 +162,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
 
-    
-    
-    
     
     func application(_ application: UIApplication, performActionFor shortcutItem: UIApplicationShortcutItem, completionHandler: @escaping (Bool) -> Void) {
         

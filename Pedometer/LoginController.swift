@@ -7,6 +7,9 @@
 //
 
 import UIKit
+import AVFoundation
+import MediaPlayer
+import AVKit
 
 class LoginController: UIViewController {
     
@@ -17,10 +20,14 @@ class LoginController: UIViewController {
     @IBOutlet weak var rememberBtn: UIButton!
     @IBOutlet weak var autoLoginBtn: UIButton!
     
+    var templayer:AVPlayerViewController?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         setUI()
+        insertAnmation()
+        
     }
     
     
@@ -31,10 +38,16 @@ class LoginController: UIViewController {
     
 
     @IBAction func registBtnCLick(_ sender: UIButton) {
+        
+        
+        
     }
     
     
     @IBAction func findPassWordBtnClick(_ sender: UIButton) {
+        
+        
+        
     }
     
     
@@ -47,6 +60,11 @@ class LoginController: UIViewController {
         }else{
              sender.imageView?.image = UIImage(named: "normal")
         }
+        
+        if sender == self.autoLoginBtn && sender.isSelected {
+            self.rememberBtn.isSelected = true
+        }
+        
 
     }
     
@@ -77,18 +95,38 @@ class LoginController: UIViewController {
 extension LoginController{
 
     fileprivate func setUI(){
-    self.login_user.leftView = UIImageView(image: UIImage(named: "icon_user"))
-    self.login_user.leftViewMode = .always
-    self.login_password.leftView = UIImageView(image: UIImage(named: "icon_key"))
-    self.login_password.leftViewMode = .always
-    self.rememberBtn.setImage(UIImage(named: "normal"), for: .normal)
-    self.rememberBtn.setImage(UIImage(named: "selected"), for: .selected)
-    self.rememberBtn.imageEdgeInsets = UIEdgeInsets(top: 0, left: -30, bottom: 0, right: 0)
-    self.autoLoginBtn.setImage(UIImage(named: "normal"), for: .normal)
-    self.autoLoginBtn.setImage(UIImage(named: "selected"), for: .selected)
-    self.autoLoginBtn.imageEdgeInsets = UIEdgeInsets(top: 0, left: -30, bottom: 0, right: 0)
-}
+        self.login_user.leftView = UIImageView(image: UIImage(named: "icon_user"))
+        self.login_user.leftViewMode = .always
+        self.login_password.leftView = UIImageView(image: UIImage(named: "icon_key"))
+        self.login_password.leftViewMode = .always
+        self.rememberBtn.setImage(UIImage(named: "normal"), for: .normal)
+        self.rememberBtn.setImage(UIImage(named: "selected"), for: .selected)
+        self.rememberBtn.imageEdgeInsets = UIEdgeInsets(top: 0, left: -30, bottom: 0, right: 0)
+        self.autoLoginBtn.setImage(UIImage(named: "normal"), for: .normal)
+        self.autoLoginBtn.setImage(UIImage(named: "selected"), for: .selected)
+        self.autoLoginBtn.imageEdgeInsets = UIEdgeInsets(top: 0, left: -30, bottom: 0, right: 0)
+    }
     
+    fileprivate func insertAnmation(){
+       
+//        let url = URL(fileURLWithPath: Bundle.main.path(forResource: "register_guide_video", ofType: "mp4")!)
+//        self.templayer = AVPlayerViewController()
+//        self.templayer?.player = AVPlayer(url: url)
+//        self.templayer?.videoGravity = AVLayerVideoGravityResize;
+//        self.templayer?.player?.play()
+//        self.present(self.templayer! , animated: true) {
+        
+//        }
+        
+            let imgView = UIImageView(frame: UIScreen.main.bounds)
+            imgView.image = UIImage(named: "view_bg.jpg")
+            imgView.alpha = 0.5
+            self.view.insertSubview(imgView, at: 0)
+
+        
+    }
+    
+
 }
 
 

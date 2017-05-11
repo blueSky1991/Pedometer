@@ -25,6 +25,7 @@
 		4A2C0B611EC2FAB700BC855C /* LoginController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4A2C0B5F1EC2FAB700BC855C /* LoginController.xib */; };
 		4A2C0B631EC30ADF00BC855C /* UserInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A2C0B621EC30ADF00BC855C /* UserInfo.swift */; };
 		4A2C0B651EC30C3B00BC855C /* UserInfoTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A2C0B641EC30C3B00BC855C /* UserInfoTool.swift */; };
+		4A2C0B671EC32BA000BC855C /* register_guide_video.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 4A2C0B661EC32BA000BC855C /* register_guide_video.mp4 */; };
 		4A71F4981EA74C8F00D4978B /* StepModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A71F4971EA74C8F00D4978B /* StepModel.swift */; };
 		4ABE39991EADD59A001D979D /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4ABE39981EADD59A001D979D /* AVFoundation.framework */; settings = {ATTRIBUTES = (Required, ); }; };
 		4AD2EDA31EA06F6B00B82CD6 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 4AD2EDA21EA06F6B00B82CD6 /* icon.png */; };
@@ -32,6 +33,8 @@
 		4AD2EDBC1EA0A42000B82CD6 /* SoundPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AD2EDBB1EA0A42000B82CD6 /* SoundPlayer.swift */; };
 		4AD2EDC21EA0C2DD00B82CD6 /* icon_28.png in Resources */ = {isa = PBXBuildFile; fileRef = 4AD2EDC01EA0C2DD00B82CD6 /* icon_28.png */; };
 		4AD2EDC31EA0C2DD00B82CD6 /* icon_108.png in Resources */ = {isa = PBXBuildFile; fileRef = 4AD2EDC11EA0C2DD00B82CD6 /* icon_108.png */; };
+		4AE8BC621EC4647E00139843 /* view_bg.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4AE8BC611EC4647E00139843 /* view_bg.jpg */; };
+		F6DD440A36FE6179A67F817F /* Pods_Pedometer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E8C12ACBA28F9EF16091634 /* Pods_Pedometer.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +55,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3E8C12ACBA28F9EF16091634 /* Pods_Pedometer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Pedometer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		401CCFC123DB1060CA7A018B /* Pods-Pedometer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pedometer.release.xcconfig"; path = "Pods/Target Support Files/Pods-Pedometer/Pods-Pedometer.release.xcconfig"; sourceTree = "<group>"; };
 		4A07EDD11E9F56310002389B /* Pedometer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pedometer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4A07EDD41E9F56310002389B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4A07EDD61E9F56310002389B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -71,12 +76,13 @@
 		4A0E423C1EA5A8BE00EB8BF1 /* ShowController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ShowController.xib; sourceTree = "<group>"; };
 		4A0E423F1EA5AA3500EB8BF1 /* CirclePercentageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CirclePercentageView.swift; sourceTree = "<group>"; };
 		4A0E42431EA6029D00EB8BF1 /* UIColor+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
-		4A17E0101EC1528900048D7F /* Pedometer.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Pedometer.entitlements; sourceTree = "<group>"; };
+		4A17E0101EC1528900048D7F /* Pedometer.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; name = Pedometer.entitlements; path = ../Pedometer.entitlements; sourceTree = "<group>"; };
 		4A17E0111EC1528900048D7F /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
 		4A2C0B5E1EC2FAB700BC855C /* LoginController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
 		4A2C0B5F1EC2FAB700BC855C /* LoginController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginController.xib; sourceTree = "<group>"; };
 		4A2C0B621EC30ADF00BC855C /* UserInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserInfo.swift; sourceTree = "<group>"; };
 		4A2C0B641EC30C3B00BC855C /* UserInfoTool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserInfoTool.swift; sourceTree = "<group>"; };
+		4A2C0B661EC32BA000BC855C /* register_guide_video.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = register_guide_video.mp4; path = ../register_guide_video.mp4; sourceTree = "<group>"; };
 		4A71F4971EA74C8F00D4978B /* StepModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StepModel.swift; sourceTree = "<group>"; };
 		4ABE39981EADD59A001D979D /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		4AD2EDA21EA06F6B00B82CD6 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
@@ -84,6 +90,8 @@
 		4AD2EDBB1EA0A42000B82CD6 /* SoundPlayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SoundPlayer.swift; sourceTree = "<group>"; };
 		4AD2EDC01EA0C2DD00B82CD6 /* icon_28.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_28.png; sourceTree = "<group>"; };
 		4AD2EDC11EA0C2DD00B82CD6 /* icon_108.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_108.png; sourceTree = "<group>"; };
+		4AE8BC611EC4647E00139843 /* view_bg.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = view_bg.jpg; sourceTree = "<group>"; };
+		D9DF360CE904D846303C34F9 /* Pods-Pedometer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pedometer.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Pedometer/Pods-Pedometer.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +101,7 @@
 			files = (
 				4ABE39991EADD59A001D979D /* AVFoundation.framework in Frameworks */,
 				4A17E0121EC1528900048D7F /* HealthKit.framework in Frameworks */,
+				F6DD440A36FE6179A67F817F /* Pods_Pedometer.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -121,6 +130,7 @@
 				4A07EDF31E9F56320002389B /* PedometerUITests */,
 				4A07EDD21E9F56310002389B /* Products */,
 				4A07EE051E9F89580002389B /* Frameworks */,
+				A58AF54E0509A82C5D90F5E6 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -137,7 +147,7 @@
 		4A07EDD31E9F56310002389B /* Pedometer */ = {
 			isa = PBXGroup;
 			children = (
-				4A17E0101EC1528900048D7F /* Pedometer.entitlements */,
+				4AE8BC601EC4645200139843 /* Recourse */,
 				4A0E42361EA5A72100EB8BF1 /* Base */,
 				4A0E42321EA5A66000EB8BF1 /* ShowView */,
 				4AD2EDCE1EA0C7E800B82CD6 /* Vender */,
@@ -172,6 +182,7 @@
 			children = (
 				4A17E0111EC1528900048D7F /* HealthKit.framework */,
 				4ABE39981EADD59A001D979D /* AVFoundation.framework */,
+				3E8C12ACBA28F9EF16091634 /* Pods_Pedometer.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -295,6 +306,25 @@
 			name = Vender;
 			sourceTree = "<group>";
 		};
+		4AE8BC601EC4645200139843 /* Recourse */ = {
+			isa = PBXGroup;
+			children = (
+				4A2C0B661EC32BA000BC855C /* register_guide_video.mp4 */,
+				4AE8BC611EC4647E00139843 /* view_bg.jpg */,
+				4A17E0101EC1528900048D7F /* Pedometer.entitlements */,
+			);
+			path = Recourse;
+			sourceTree = "<group>";
+		};
+		A58AF54E0509A82C5D90F5E6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D9DF360CE904D846303C34F9 /* Pods-Pedometer.debug.xcconfig */,
+				401CCFC123DB1060CA7A018B /* Pods-Pedometer.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -302,9 +332,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4A07EDF91E9F56320002389B /* Build configuration list for PBXNativeTarget "Pedometer" */;
 			buildPhases = (
+				EE3E4197BAD137223021D046 /* [CP] Check Pods Manifest.lock */,
 				4A07EDCD1E9F56310002389B /* Sources */,
 				4A07EDCE1E9F56310002389B /* Frameworks */,
 				4A07EDCF1E9F56310002389B /* Resources */,
+				C6C34D9C6E5CFA3FC032961F /* [CP] Embed Pods Frameworks */,
+				ABABC422309FE21B177AC3FF /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -420,8 +453,10 @@
 				4AD2EDC31EA0C2DD00B82CD6 /* icon_108.png in Resources */,
 				4AD2EDA31EA06F6B00B82CD6 /* icon.png in Resources */,
 				4A07EDDF1E9F56310002389B /* LaunchScreen.storyboard in Resources */,
+				4AE8BC621EC4647E00139843 /* view_bg.jpg in Resources */,
 				4A07EDDC1E9F56310002389B /* Assets.xcassets in Resources */,
 				4AD2EDC21EA0C2DD00B82CD6 /* icon_28.png in Resources */,
+				4A2C0B671EC32BA000BC855C /* register_guide_video.mp4 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -440,6 +475,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		ABABC422309FE21B177AC3FF /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Pedometer/Pods-Pedometer-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C6C34D9C6E5CFA3FC032961F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Pedometer/Pods-Pedometer-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EE3E4197BAD137223021D046 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		4A07EDCD1E9F56310002389B /* Sources */ = {
@@ -603,6 +686,7 @@
 		};
 		4A07EDFA1E9F56320002389B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D9DF360CE904D846303C34F9 /* Pods-Pedometer.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ALWAYS_SEARCH_USER_PATHS = YES;
@@ -626,6 +710,7 @@
 		};
 		4A07EDFB1E9F56320002389B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 401CCFC123DB1060CA7A018B /* Pods-Pedometer.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ALWAYS_SEARCH_USER_PATHS = YES;
