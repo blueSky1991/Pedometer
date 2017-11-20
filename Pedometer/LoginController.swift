@@ -11,6 +11,7 @@ import AVFoundation
 import MediaPlayer
 import AVKit
 
+
 class LoginController: UIViewController {
     
     
@@ -24,7 +25,6 @@ class LoginController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         setUI()
         insertAnmation()
         
@@ -79,6 +79,11 @@ class LoginController: UIViewController {
         UserInfoTool.shareInstance.saveUserInfo(info: user)
         self.login_user.text = ""
         self.login_password.text = ""
+        
+        let homeView = HomeViewController()
+        homeView.title = "添加步数"
+        self.navigationController?.isNavigationBarHidden = false
+        self.navigationController?.pushViewController(homeView, animated: true)
         
     }
     

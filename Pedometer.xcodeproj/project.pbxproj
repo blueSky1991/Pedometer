@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		4A07EDD51E9F56310002389B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A07EDD41E9F56310002389B /* AppDelegate.swift */; };
-		4A07EDD71E9F56310002389B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A07EDD61E9F56310002389B /* ViewController.swift */; };
+		4A07EDD71E9F56310002389B /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A07EDD61E9F56310002389B /* HomeViewController.swift */; };
 		4A07EDDC1E9F56310002389B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4A07EDDB1E9F56310002389B /* Assets.xcassets */; };
 		4A07EDDF1E9F56310002389B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A07EDDD1E9F56310002389B /* LaunchScreen.storyboard */; };
 		4A07EDEA1E9F56320002389B /* PedometerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A07EDE91E9F56320002389B /* PedometerTests.swift */; };
@@ -27,6 +27,11 @@
 		4A2C0B651EC30C3B00BC855C /* UserInfoTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A2C0B641EC30C3B00BC855C /* UserInfoTool.swift */; };
 		4A2C0B671EC32BA000BC855C /* register_guide_video.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 4A2C0B661EC32BA000BC855C /* register_guide_video.mp4 */; };
 		4A71F4981EA74C8F00D4978B /* StepModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A71F4971EA74C8F00D4978B /* StepModel.swift */; };
+		4ABC1FFA1FC27B0F003DBA42 /* BaseNavViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ABC1FF81FC27B0F003DBA42 /* BaseNavViewController.swift */; };
+		4ABC1FFB1FC27B0F003DBA42 /* BaseNavViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4ABC1FF91FC27B0F003DBA42 /* BaseNavViewController.xib */; };
+		4ABC1FFE1FC2ACAC003DBA42 /* SVProgressHUD.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4ABC1FFF1FC2ACAC003DBA42 /* SVProgressHUD.framework */; };
+		4ABC20001FC2ACB7003DBA42 /* Photos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4ABC1FFD1FC2ACA1003DBA42 /* Photos.framework */; };
+		4ABC20011FC2ACBF003DBA42 /* PhotosUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4ABC1FFC1FC2ACA1003DBA42 /* PhotosUI.framework */; };
 		4ABE39991EADD59A001D979D /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4ABE39981EADD59A001D979D /* AVFoundation.framework */; settings = {ATTRIBUTES = (Required, ); }; };
 		4AD2EDA31EA06F6B00B82CD6 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 4AD2EDA21EA06F6B00B82CD6 /* icon.png */; };
 		4AD2EDBA1EA0862C00B82CD6 /* timg.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 4AD2EDB91EA0862C00B82CD6 /* timg.jpeg */; };
@@ -59,7 +64,7 @@
 		401CCFC123DB1060CA7A018B /* Pods-Pedometer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pedometer.release.xcconfig"; path = "Pods/Target Support Files/Pods-Pedometer/Pods-Pedometer.release.xcconfig"; sourceTree = "<group>"; };
 		4A07EDD11E9F56310002389B /* Pedometer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pedometer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4A07EDD41E9F56310002389B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		4A07EDD61E9F56310002389B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		4A07EDD61E9F56310002389B /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		4A07EDDB1E9F56310002389B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4A07EDDE1E9F56310002389B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4A07EDE01E9F56310002389B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -84,6 +89,11 @@
 		4A2C0B641EC30C3B00BC855C /* UserInfoTool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserInfoTool.swift; sourceTree = "<group>"; };
 		4A2C0B661EC32BA000BC855C /* register_guide_video.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = register_guide_video.mp4; path = ../register_guide_video.mp4; sourceTree = "<group>"; };
 		4A71F4971EA74C8F00D4978B /* StepModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StepModel.swift; sourceTree = "<group>"; };
+		4ABC1FF81FC27B0F003DBA42 /* BaseNavViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseNavViewController.swift; sourceTree = "<group>"; };
+		4ABC1FF91FC27B0F003DBA42 /* BaseNavViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BaseNavViewController.xib; sourceTree = "<group>"; };
+		4ABC1FFC1FC2ACA1003DBA42 /* PhotosUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PhotosUI.framework; path = System/Library/Frameworks/PhotosUI.framework; sourceTree = SDKROOT; };
+		4ABC1FFD1FC2ACA1003DBA42 /* Photos.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Photos.framework; path = System/Library/Frameworks/Photos.framework; sourceTree = SDKROOT; };
+		4ABC1FFF1FC2ACAC003DBA42 /* SVProgressHUD.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SVProgressHUD.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4ABE39981EADD59A001D979D /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		4AD2EDA21EA06F6B00B82CD6 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
 		4AD2EDB91EA0862C00B82CD6 /* timg.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = timg.jpeg; sourceTree = "<group>"; };
@@ -99,6 +109,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4ABC20011FC2ACBF003DBA42 /* PhotosUI.framework in Frameworks */,
+				4ABC20001FC2ACB7003DBA42 /* Photos.framework in Frameworks */,
+				4ABC1FFE1FC2ACAC003DBA42 /* SVProgressHUD.framework in Frameworks */,
 				4ABE39991EADD59A001D979D /* AVFoundation.framework in Frameworks */,
 				4A17E0121EC1528900048D7F /* HealthKit.framework in Frameworks */,
 				F6DD440A36FE6179A67F817F /* Pods_Pedometer.framework in Frameworks */,
@@ -180,6 +193,9 @@
 		4A07EE051E9F89580002389B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				4ABC1FFF1FC2ACAC003DBA42 /* SVProgressHUD.framework */,
+				4ABC1FFD1FC2ACA1003DBA42 /* Photos.framework */,
+				4ABC1FFC1FC2ACA1003DBA42 /* PhotosUI.framework */,
 				4A17E0111EC1528900048D7F /* HealthKit.framework */,
 				4ABE39981EADD59A001D979D /* AVFoundation.framework */,
 				3E8C12ACBA28F9EF16091634 /* Pods_Pedometer.framework */,
@@ -226,6 +242,8 @@
 			children = (
 				4A0E42371EA5A75700EB8BF1 /* BaseViewController.swift */,
 				4A0E42381EA5A75700EB8BF1 /* BaseViewController.xib */,
+				4ABC1FF81FC27B0F003DBA42 /* BaseNavViewController.swift */,
+				4ABC1FF91FC27B0F003DBA42 /* BaseNavViewController.xib */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -260,7 +278,7 @@
 		4AD2EDC51EA0C31500B82CD6 /* Home */ = {
 			isa = PBXGroup;
 			children = (
-				4A07EDD61E9F56310002389B /* ViewController.swift */,
+				4A07EDD61E9F56310002389B /* HomeViewController.swift */,
 			);
 			name = Home;
 			sourceTree = "<group>";
@@ -396,7 +414,7 @@
 				TargetAttributes = {
 					4A07EDD01E9F56310002389B = {
 						CreatedOnToolsVersion = 8.3.1;
-						DevelopmentTeam = BQ7F5XB2U3;
+						DevelopmentTeam = B88A47T8S4;
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.HealthKit = {
@@ -455,6 +473,7 @@
 				4A07EDDF1E9F56310002389B /* LaunchScreen.storyboard in Resources */,
 				4AE8BC621EC4647E00139843 /* view_bg.jpg in Resources */,
 				4A07EDDC1E9F56310002389B /* Assets.xcassets in Resources */,
+				4ABC1FFB1FC27B0F003DBA42 /* BaseNavViewController.xib in Resources */,
 				4AD2EDC21EA0C2DD00B82CD6 /* icon_28.png in Resources */,
 				4A2C0B671EC32BA000BC855C /* register_guide_video.mp4 in Resources */,
 			);
@@ -533,7 +552,8 @@
 				4A0E42401EA5AA3500EB8BF1 /* CirclePercentageView.swift in Sources */,
 				4A71F4981EA74C8F00D4978B /* StepModel.swift in Sources */,
 				4A0E423D1EA5A8BE00EB8BF1 /* ShowController.swift in Sources */,
-				4A07EDD71E9F56310002389B /* ViewController.swift in Sources */,
+				4A07EDD71E9F56310002389B /* HomeViewController.swift in Sources */,
+				4ABC1FFA1FC27B0F003DBA42 /* BaseNavViewController.swift in Sources */,
 				4A0E42441EA6029D00EB8BF1 /* UIColor+Extension.swift in Sources */,
 				4A07EE031E9F59B10002389B /* PedometerManger.swift in Sources */,
 				4AD2EDBC1EA0A42000B82CD6 /* SoundPlayer.swift in Sources */,
@@ -692,7 +712,7 @@
 				ALWAYS_SEARCH_USER_PATHS = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = Pedometer/Pedometer.entitlements;
-				DEVELOPMENT_TEAM = BQ7F5XB2U3;
+				DEVELOPMENT_TEAM = B88A47T8S4;
 				EMBED_ASSET_PACKS_IN_PRODUCT_BUNDLE = YES;
 				INFOPLIST_FILE = Pedometer/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -701,7 +721,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Pedometer/OpenSDK1.7.7",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.zhangdongdong.Pedometer;
+				PRODUCT_BUNDLE_IDENTIFIER = com.zhangdongdong.Pedometer1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -716,7 +736,7 @@
 				ALWAYS_SEARCH_USER_PATHS = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = Pedometer/Pedometer.entitlements;
-				DEVELOPMENT_TEAM = BQ7F5XB2U3;
+				DEVELOPMENT_TEAM = B88A47T8S4;
 				EMBED_ASSET_PACKS_IN_PRODUCT_BUNDLE = YES;
 				INFOPLIST_FILE = Pedometer/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -725,7 +745,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Pedometer/OpenSDK1.7.7",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.zhangdongdong.Pedometer;
+				PRODUCT_BUNDLE_IDENTIFIER = com.zhangdongdong.Pedometer1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = 1;

@@ -226,7 +226,7 @@ extension ShowController {
     
     func settingBtn(btn:UIButton){
         
-        let viewContr = ViewController()
+        let viewContr = HomeViewController()
         
         self.navigationController?.pushViewController(viewContr, animated: true)
     

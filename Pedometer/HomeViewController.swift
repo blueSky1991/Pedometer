@@ -12,7 +12,7 @@ import AVFoundation
 import MediaPlayer
 import AVKit
 
-class ViewController: UIViewController,UITextFieldDelegate {
+class HomeViewController: UIViewController,UITextFieldDelegate {
     
     
   var templayer:AVPlayerViewController?
@@ -27,7 +27,8 @@ class ViewController: UIViewController,UITextFieldDelegate {
         super.viewDidLoad()
         
 
-        self.title  = "添加我的步数"
+        
+        
         initUI()
         getCompetence()
         
@@ -116,7 +117,7 @@ class ViewController: UIViewController,UITextFieldDelegate {
 }
 
 
-extension ViewController {
+extension HomeViewController {
 
     func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
     
@@ -134,9 +135,12 @@ extension ViewController {
 
 
 
-extension ViewController{
+extension HomeViewController{
     fileprivate  func initUI(){
     
+        
+        
+        self.view.backgroundColor = UIColor.white
         let width = UIScreen.main.bounds.size.width
         
         self.stepNumer = UITextField(frame: CGRect(x: 50, y: 150, width:width-100 , height: 40))
@@ -157,7 +161,7 @@ extension ViewController{
         self.addStep?.layer.borderWidth = 1
         self.addStep?.layer.borderColor = UIColor.black.cgColor
         self.addStep?.setTitle("添   加", for: .normal)
-        self.addStep?.backgroundColor = UIColor.red
+        self.addStep?.backgroundColor = UIColor.cyan
         self.addStep?.setTitleColor(UIColor.black, for: .normal)
         self.addStep?.addTarget(self, action: #selector(addStepNumerAction(_:)), for:.touchUpInside)
         self.view.addSubview(self.addStep!)
@@ -174,7 +178,7 @@ extension ViewController{
 
 
 
-extension ViewController {
+extension HomeViewController {
 
     //获取权限
      fileprivate  func getCompetence()  {

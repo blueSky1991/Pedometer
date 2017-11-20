@@ -18,7 +18,9 @@ extension UIColor{
         let green = Float((hexColor & 0xFF0000)>>8)/255.0
         let blue = Float((hexColor & 0xFF0000))/255.0
         
-       return UIColor(colorLiteralRed: red, green: green, blue:blue, alpha: 1.0)
+        return UIColor.init(red: CGFloat(red), green: CGFloat(green), blue: CGFloat(blue), alpha: 1.0)
+        
+//       return UIColor(colorLiteralRed: red, green: green, blue:blue, alpha: 1.0)
     }
     
     
@@ -28,7 +30,8 @@ extension UIColor{
         let green = Float((hexColor & 0xFF0000)>>8)/255.0
         let blue = Float((hexColor & 0xFF0000))/255.0
         
-        return UIColor(colorLiteralRed: red, green: green, blue:blue, alpha: alpha)
+         return UIColor.init(red: CGFloat(red), green: CGFloat(green), blue: CGFloat(blue), alpha: 1.0)
+//        return UIColor(colorLiteralRed: red, green: green, blue:blue, alpha: alpha)
         
     }
 

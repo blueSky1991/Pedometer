@@ -7,23 +7,34 @@
 //
 
 import UIKit
+import Photos
+
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
+    var imageView: UIImageView?
+    
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         
         self.window = UIWindow.init(frame: UIScreen.main.bounds)
         self.window?.backgroundColor = UIColor.white
-        self.window?.rootViewController =  LoginController()
+        
+        let nav =  UINavigationController(rootViewController: LoginController())
+        nav.navigationBar.isHidden = true
+
+        self.window?.rootViewController = nav
         self.window?.makeKeyAndVisible()
         
         NotificationCenter.default.addObserver(forName: NSNotification.Name.UIApplicationUserDidTakeScreenshot, object: nil, queue: OperationQueue.main) { (notification:Notification) in
             let alter =   UIAlertController(title: "警告", message: "用户数据为私有,禁止泄露,再次截屏将封号处理", preferredStyle: .alert)
             let okAction = UIAlertAction(title: "知道了", style: .default, handler: { (action:UIAlertAction) in
-                self.userDidTakeScreenshot(notification: notification as NSNotification)
+//                self.userDidTakeScreenshot(notification: notification as NSNotification)
+                self.removeLastImage()
+                
+                
             })
             alter.addAction(okAction)
             self.window?.rootViewController?.present(alter, animated: true, completion: nil)
@@ -41,11 +52,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         print("检测用户截屏")
 //        
        //人为截屏, 模拟用户截屏行为, 获取所截图片
-           let image = imageWithScreenshot()
+        let image = imageWithScreenshot()
             //添加显示
-           let imageView = UIImageView.init(image: image)
-           let imgNum = (self.window?.frame.size.width)!/2
-          imageView.frame = CGRect(x: imgNum, y: imgNum, width: imgNum, height: imgNum)
+        let imageView = UIImageView.init(image: image)
+        self.imageView = imageView
+        let imgNum = (self.window?.frame.size.width)!/2
+        imageView.frame = CGRect(x: imgNum, y: imgNum, width: imgNum, height: imgNum)
 
 
         //添加边框
@@ -65,11 +77,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         imageView.layer.shadowRadius = 2.0
         
         self.window?.addSubview(imageView)
-
         
-        self.perform( #selector(imageView.removeFromSuperview), with: nil, afterDelay: 5)
         
     }
+    
+    
+    
     
     func imageWithScreenshot() -> UIImage {
         
@@ -136,6 +149,48 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     
     
+    func removeLastImage() -> Void {
+        
+        
+        let collectonResuts = PHAssetCollection.fetchAssetCollections(with: .smartAlbum, subtype: .any, options: PHFetchOptions())
+        
+        collectonResuts.enumerateObjects({ object, index, stop in
+            let assetCollection = object as PHAssetCollection!
+            if "Camera Roll" == assetCollection?.localizedTitle {
+                let assetResult = PHAsset.fetchAssets(in: assetCollection!, options: PHFetchOptions())
+                
+                  assetResult.enumerateObjects({ subobject, subindex, substop in
+                    
+                    PHPhotoLibrary.shared().performChanges({
+                        
+                        if subindex == assetResult.count-1 {
+                            PHAssetChangeRequest.deleteAssets([subobject] as NSFastEnumeration)
+                        }
+                        
+                        
+                    }, completionHandler: { (success, error) in
+                        
+                    })
+                   
+                    
+                })
+                
+                
+            }
+            
+            
+            
+        })
+        
+        
+        
+        
+        
+        
+        
+    }
+    
+    
     
     
     
@@ -169,6 +224,46 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         print(shortcutItem.type)
         
     }
+    
+    
+    
+    
+    
+ 
+//    func getAllAlbumInformation() -> [[PHFetchResult]]{
+//        var allSmartAlbums = [PHFetchResult]()
+//        //  所有图片
+//        let allOptions = PHFetchOptions()
+//        //  时间排序
+//        allOptions.sortDescriptors = [NSSortDescriptor(key: "creationDate", ascending: true)]
+//        let allPhotos = PHAsset.fetchAssetsWithOptions(allOptions)
+//        allSmartAlbums.append(allPhotos)
+//
+//        let smartAlbums:PHFetchResult = PHAssetCollection.fetchAssetCollectionsWithType(PHAssetCollectionType.SmartAlbum, subtype: PHAssetCollectionSubtype.AlbumRegular, options: nil)
+//        //  智能相册---最近添加
+//        let collection = smartAlbums.objectAtIndex(SmartAlbumsType.RecentlyAdded.hashValue) as! PHAssetCollection
+//        let recentely = PHAsset.fetchAssetsInAssetCollection(collection, options: nil)
+//        allSmartAlbums.append(recentely)
+//
+//        //  智能相册---屏幕截图
+//        let screenshot = smartAlbums.objectAtIndex(SmartAlbumsType.Screenshots.hashValue) as! PHAssetCollection
+//        let screenshotResult = PHAsset.fetchAssetsInAssetCollection(screenshot, options: nil)
+//        allSmartAlbums.append(screenshotResult)
+//
+//        //  智能相册---个人收藏
+//        let favorite = smartAlbums.objectAtIndex(SmartAlbumsType.Favorites.hashValue) as! PHAssetCollection
+//        let favoriteResult = PHAsset.fetchAssetsInAssetCollection(favorite, options: nil)
+//        allSmartAlbums.append(favoriteResult)
+//
+//        //  个人自定义相册
+//        let userDeterminAlbums = PHCollectionList.fetchTopLevelUserCollectionsWithOptions(nil)
+//
+//        let allAlbums = [allSmartAlbums,[userDeterminAlbums]]
+//
+//        PHPhotoLibrary.sharedPhotoLibrary().registerChangeObserver(self)
+//
+//        return allAlbums
+//    }
     
     
 
