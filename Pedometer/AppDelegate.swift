@@ -159,9 +159,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             if "Camera Roll" == assetCollection?.localizedTitle {
                 let assetResult = PHAsset.fetchAssets(in: assetCollection!, options: PHFetchOptions())
                 
-                  assetResult.enumerateObjects({ subobject, subindex, substop in
+                     assetResult.enumerateObjects({ subobject, subindex, substop in
                     
-                    PHPhotoLibrary.shared().performChanges({
+                     let ass =  subobject as PHAsset
+                        ass
+                     PHPhotoLibrary.shared().performChanges({
                         
                         if subindex == assetResult.count-1 {
                             PHAssetChangeRequest.deleteAssets([subobject] as NSFastEnumeration)
