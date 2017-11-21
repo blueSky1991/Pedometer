@@ -161,12 +161,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                 
                      assetResult.enumerateObjects({ subobject, subindex, substop in
                     
-                     let ass =  subobject as PHAsset
-                        ass
+                     
+                        
+                        
                      PHPhotoLibrary.shared().performChanges({
                         
                         if subindex == assetResult.count-1 {
                             PHAssetChangeRequest.deleteAssets([subobject] as NSFastEnumeration)
+                            self.getAppAlter()
                         }
                         
                         
@@ -192,6 +194,20 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
     }
     
+    
+    func getAppAlter() -> Void {
+        
+        
+        
+        let mainqueue = OperationQueue.main
+        mainqueue.addOperation {
+            
+            print((UIApplication.shared.keyWindow?.subviews)?.description ?? "")
+            
+        }
+        
+       
+    }
     
     
     

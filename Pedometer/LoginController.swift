@@ -31,6 +31,12 @@ class LoginController: UIViewController {
     }
     
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        self.navigationController?.navigationBar.isHidden = true
+    }
+    
+    
     override var prefersStatusBarHidden: Bool{
         
         return true
@@ -82,7 +88,7 @@ class LoginController: UIViewController {
         
         let homeView = HomeViewController()
         homeView.title = "添加步数"
-        self.navigationController?.isNavigationBarHidden = false
+        self.navigationController?.navigationBar.isHidden = false
         self.navigationController?.pushViewController(homeView, animated: true)
         
     }

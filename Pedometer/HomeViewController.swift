@@ -207,7 +207,6 @@ extension HomeViewController {
                     alterView.addAction(okAction)
                     self.present(alterView, animated: true, completion: nil)
 
-                    
                 }
                 
             })

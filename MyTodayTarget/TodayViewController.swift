@@ -10,10 +10,19 @@ import UIKit
 import NotificationCenter
 
 class TodayViewController: UIViewController, NCWidgetProviding {
-        
+    
+    
+    @IBOutlet weak var btn: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view from its nib.
+    }
+    
+    
+    @IBAction func btnClick(_ sender: UIButton) {
+        print("+++++++")
+        
     }
     
     override func didReceiveMemoryWarning() {
