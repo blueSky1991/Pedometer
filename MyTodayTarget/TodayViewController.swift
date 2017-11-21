@@ -9,19 +9,61 @@
 import UIKit
 import NotificationCenter
 
-class TodayViewController: UIViewController, NCWidgetProviding {
+
+
+class TodayViewController: UIViewController, NCWidgetProviding,UITextFieldDelegate {
     
     
     @IBOutlet weak var btn: UIButton!
+    @IBOutlet weak var stepCount: UITextField!
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        self.extensionContext?.widgetLargestAvailableDisplayMode =  .expanded
+    }
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view from its nib.
+        let  x = UIScreen.main.bounds.size.width
+        self.preferredContentSize = CGSize(width: x, height: 100)
+        self.stepCount.keyboardType = .numberPad
+        self.stepCount.delegate = self as UITextFieldDelegate
+//        self.stepCount.endEditing(false)
+        self.view.resignFirstResponder()
+        self.btn.backgroundColor = UIColor.gray
+        self.btn.isEnabled = false
+        
+    }
+    
+    
+    
+    func textFieldShouldBeginEditing(_ textField: UITextField) -> Bool {
+        self.view.resignFirstResponder()
+//        self.stepCount.endEditing(false)
+        return true
+    }
+    
+    
+    func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
+        
+        if (textField.text?.isEmpty)! {
+           self.btn.backgroundColor = UIColor.gray
+           self.btn.isEnabled = false
+        }else{
+            self.btn.backgroundColor = UIColor.blue
+            self.btn.isEnabled = true
+        }
+        
+        
+        
+        
+        return true
     }
     
     
     @IBAction func btnClick(_ sender: UIButton) {
-        print("+++++++")
+        
+        
         
     }
     
@@ -39,5 +81,13 @@ class TodayViewController: UIViewController, NCWidgetProviding {
         
         completionHandler(NCUpdateResult.newData)
     }
+    
+}
+
+extension TodayViewController{
+    
+    
+    
+    
     
 }

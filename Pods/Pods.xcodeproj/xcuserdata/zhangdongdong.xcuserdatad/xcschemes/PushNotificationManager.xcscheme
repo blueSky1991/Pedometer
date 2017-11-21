@@ -14,10 +14,10 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = 'CB026FE1CF9218009362F4B383B9386B'
-               BlueprintName = 'SVProgressHUD'
+               BlueprintIdentifier = '1AE514A7C69893E1A6BC91AB2429EDFF'
+               BlueprintName = 'PushNotificationManager'
                ReferencedContainer = 'container:Pods.xcodeproj'
-               BuildableName = 'SVProgressHUD.framework'>
+               BuildableName = 'PushNotificationManager.framework'>
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>

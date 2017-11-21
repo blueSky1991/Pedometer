@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "27C6C8727B88198B17F3BE5653123655"
+               BlueprintIdentifier = "E288364AF2F7A756D28DD75D0BB4B727"
                BuildableName = "Pods_Pedometer.framework"
                BlueprintName = "Pods-Pedometer"
                ReferencedContainer = "container:Pods.xcodeproj">
@@ -26,6 +26,7 @@
       buildConfiguration = "Debug"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
+      language = ""
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
       </Testables>
@@ -36,6 +37,7 @@
       buildConfiguration = "Debug"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
+      language = ""
       launchStyle = "0"
       useCustomWorkingDirectory = "NO"
       ignoresPersistentStateOnLaunch = "NO"
@@ -45,7 +47,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "27C6C8727B88198B17F3BE5653123655"
+            BlueprintIdentifier = "E288364AF2F7A756D28DD75D0BB4B727"
             BuildableName = "Pods_Pedometer.framework"
             BlueprintName = "Pods-Pedometer"
             ReferencedContainer = "container:Pods.xcodeproj">

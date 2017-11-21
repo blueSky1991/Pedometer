@@ -18,15 +18,40 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="37"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BQW-nN-swV">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="37"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BQW-nN-swV">
+                                <rect key="frame" x="220" y="3" width="91" height="30"/>
+                                <color key="backgroundColor" red="0.14444237290917472" green="0.6466650631047659" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="Kdh-m7-PP0"/>
+                                    <constraint firstAttribute="width" constant="91" id="clk-Xs-2QV"/>
+                                </constraints>
+                                <state key="normal" title="确定">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
                                 <connections>
                                     <action selector="btnClick:" destination="M4Y-Lb-cyx" eventType="touchUpInside" id="yuD-Wz-RaS"/>
                                 </connections>
                             </button>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="修改今日的目标步数" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3yU-cP-QKO">
+                                <rect key="frame" x="5" y="3" width="206" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="O1z-mK-w1E"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="rUD-qK-J8E"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
+                        <constraints>
+                            <constraint firstItem="3yU-cP-QKO" firstAttribute="top" secondItem="ssy-KU-ocm" secondAttribute="top" constant="3" id="SR8-DK-yzl"/>
+                            <constraint firstItem="BQW-nN-swV" firstAttribute="top" secondItem="ssy-KU-ocm" secondAttribute="top" constant="3" id="YLW-bt-grE"/>
+                            <constraint firstItem="3yU-cP-QKO" firstAttribute="leading" secondItem="ssy-KU-ocm" secondAttribute="leading" constant="5" id="Zfl-mz-plW"/>
+                            <constraint firstItem="3yU-cP-QKO" firstAttribute="top" secondItem="ssy-KU-ocm" secondAttribute="top" constant="3" id="eH8-tr-Zps"/>
+                            <constraint firstItem="3yU-cP-QKO" firstAttribute="leading" secondItem="ssy-KU-ocm" secondAttribute="leading" constant="5" id="ge9-Ns-JsC"/>
+                            <constraint firstItem="ssy-KU-ocm" firstAttribute="trailing" secondItem="BQW-nN-swV" secondAttribute="trailing" constant="9" id="h9G-oj-sez"/>
+                            <constraint firstItem="BQW-nN-swV" firstAttribute="leading" secondItem="3yU-cP-QKO" secondAttribute="trailing" constant="9" id="k5b-6V-tJL"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="ssy-KU-ocm"/>
                     </view>
                     <extendedEdge key="edgesForExtendedLayout"/>
@@ -34,6 +59,7 @@
                     <size key="freeformSize" width="320" height="37"/>
                     <connections>
                         <outlet property="btn" destination="BQW-nN-swV" id="fXD-O5-sPr"/>
+                        <outlet property="stepCount" destination="3yU-cP-QKO" id="s8i-xO-xWx"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vXp-U4-Rya" userLabel="First Responder" sceneMemberID="firstResponder"/>

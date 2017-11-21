@@ -114,6 +114,7 @@
 		4A2C0B641EC30C3B00BC855C /* UserInfoTool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserInfoTool.swift; sourceTree = "<group>"; };
 		4A2C0B661EC32BA000BC855C /* register_guide_video.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = register_guide_video.mp4; path = ../register_guide_video.mp4; sourceTree = "<group>"; };
 		4A71F4971EA74C8F00D4978B /* StepModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StepModel.swift; sourceTree = "<group>"; };
+		4A85598A1FC3C85B006D5E4E /* MyTodayTarget-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MyTodayTarget-Bridging-Header.h"; sourceTree = "<group>"; };
 		4ABC1FF81FC27B0F003DBA42 /* BaseNavViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseNavViewController.swift; sourceTree = "<group>"; };
 		4ABC1FF91FC27B0F003DBA42 /* BaseNavViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BaseNavViewController.xib; sourceTree = "<group>"; };
 		4ABC1FFC1FC2ACA1003DBA42 /* PhotosUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PhotosUI.framework; path = System/Library/Frameworks/PhotosUI.framework; sourceTree = SDKROOT; };
@@ -311,6 +312,7 @@
 				4ABC201E1FC2DC75003DBA42 /* TodayViewController.swift */,
 				4ABC20201FC2DC75003DBA42 /* MainInterface.storyboard */,
 				4ABC20231FC2DC75003DBA42 /* Info.plist */,
+				4A85598A1FC3C85B006D5E4E /* MyTodayTarget-Bridging-Header.h */,
 			);
 			path = MyTodayTarget;
 			sourceTree = "<group>";
@@ -529,6 +531,7 @@
 					4ABC20191FC2DC75003DBA42 = {
 						CreatedOnToolsVersion = 9.1;
 						DevelopmentTeam = B88A47T8S4;
+						LastSwiftMigration = 0910;
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.ApplicationGroups.iOS = {
@@ -625,9 +628,14 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Pedometer/Pods-Pedometer-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/PushNotificationManager/PushNotificationManager.framework",
+				"${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PushNotificationManager.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SVProgressHUD.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -640,13 +648,16 @@
 			files = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Pedometer-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -945,6 +956,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_MODULES = YES;
 				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
@@ -963,6 +975,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.zhangdongdong.Pedometer1.MyTodayTarget;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "MyTodayTarget/MyTodayTarget-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -972,6 +986,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_MODULES = YES;
 				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
@@ -990,6 +1005,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.zhangdongdong.Pedometer1.MyTodayTarget;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "MyTodayTarget/MyTodayTarget-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
