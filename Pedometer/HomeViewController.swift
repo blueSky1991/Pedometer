@@ -12,6 +12,8 @@ import AVFoundation
 import MediaPlayer
 import AVKit
 
+
+
 class HomeViewController: UIViewController,UITextFieldDelegate {
     
     
@@ -25,9 +27,6 @@ class HomeViewController: UIViewController,UITextFieldDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-
-        
         
         initUI()
         getCompetence()
@@ -68,18 +67,9 @@ class HomeViewController: UIViewController,UITextFieldDelegate {
                         
                         DispatchQueue.main.async {
                             
-                            
-                            let alterView = UIAlertController.init(title: "提示", message: "步数已加上", preferredStyle: .alert)
-                            
-                            let okAction = UIAlertAction(title: "确定", style: .default, handler:{
-                                (UIAlertAction) -> Void in
-                                self.stepNumer.text = ""
-                                self.navigationController?.popViewController(animated: true)
-                                
-                            })
-                            
-                            alterView.addAction(okAction)
-                            self.present(alterView, animated: true, completion: nil)
+                             
+                         PushNotificationManager.sharedInstance().normalPushNotification(withTitle: "提示", subTitle: "今日目标", body: "啦啦啦", identifier: "stepCount", timeInterval: 70, repeat: false)
+
 
                         }
 

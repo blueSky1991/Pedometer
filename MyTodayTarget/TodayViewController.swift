@@ -8,30 +8,48 @@
 
 import UIKit
 import NotificationCenter
+import HealthKit
+import AVFoundation
+import MediaPlayer
+import AVKit
 
 
 
-class TodayViewController: UIViewController, NCWidgetProviding,UITextFieldDelegate {
-    
-    
+
+class TodayViewController: UIViewController,
+NCWidgetProviding,
+UITextFieldDelegate,
+FSCalendarDelegate,
+FSCalendarDataSource {
+
+    var healthStore :HKHealthStore?
+    @IBOutlet weak var calender: FSCalendar!
     @IBOutlet weak var btn: UIButton!
     @IBOutlet weak var stepCount: UITextField!
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+        getCompetence()
         self.extensionContext?.widgetLargestAvailableDisplayMode =  .expanded
     }
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        
+        
         let  x = UIScreen.main.bounds.size.width
         self.preferredContentSize = CGSize(width: x, height: 100)
         self.stepCount.keyboardType = .numberPad
         self.stepCount.delegate = self as UITextFieldDelegate
 //        self.stepCount.endEditing(false)
-        self.view.resignFirstResponder()
-        self.btn.backgroundColor = UIColor.gray
-        self.btn.isEnabled = false
+//        self.view.resignFirstResponder()
+//        self.btn.backgroundColor = UIColor.gray
+//        self.btn.isEnabled = false
+        
+//        self.calender.dataSource = self as? FSCalendarDataSource
+//        self.calender.delegate = self as? FSCalendarDelegate
+        
         
     }
     
@@ -39,7 +57,14 @@ class TodayViewController: UIViewController, NCWidgetProviding,UITextFieldDelega
     
     func textFieldShouldBeginEditing(_ textField: UITextField) -> Bool {
         self.view.resignFirstResponder()
-//        self.stepCount.endEditing(false)
+
+        return true
+    }
+    
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        
+        
         return true
     }
     
@@ -54,14 +79,44 @@ class TodayViewController: UIViewController, NCWidgetProviding,UITextFieldDelega
             self.btn.isEnabled = true
         }
         
-        
-        
-        
+       
         return true
     }
     
     
     @IBAction func btnClick(_ sender: UIButton) {
+        
+
+        let stepType = HKQuantityType.quantityType(forIdentifier: .stepCount)
+        if HKHealthStore.isHealthDataAvailable() {
+            
+            let stepQuantity = HKQuantity.init(unit: HKUnit.count(), doubleValue: Double(50))
+            
+            let stepSample = HKQuantitySample.init(type: stepType!, quantity: stepQuantity, start: Date.init(timeIntervalSinceNow: -15*60), end: Date.init())
+            
+            
+             self.healthStore?.save(stepSample, withCompletion: { (success, error) in
+                if success {
+                    DispatchQueue.main.async {
+                  PushNotificationManager.sharedInstance().normalPushNotification(withTitle: "提示", subTitle: "今日目标", body: "啦啦啦", identifier: "stepCount", timeInterval: 10, repeat: false)
+                        
+                    }
+                    
+                    
+                }else{
+                    
+                    DispatchQueue.main.async {
+                        
+                       
+                        
+                    }
+                    
+                    
+                }
+                
+            })
+        }
+        
         
         
         
@@ -86,8 +141,59 @@ class TodayViewController: UIViewController, NCWidgetProviding,UITextFieldDelega
 
 extension TodayViewController{
     
+  
+    //获取权限
+    fileprivate  func getCompetence()  {
+        
+        
+        self.healthStore = HKHealthStore.init()
+        
+        if HKHealthStore.isHealthDataAvailable(){
+            let write = writeCompetence()
+            let read = readCompetence()
+            
+            self.healthStore?.requestAuthorization(toShare: write, read: read, completion: { (success, error) in
+                if success {
+                    print("success")
+                }else{
+                    
+                    let alterView = UIAlertController.init(title:"", message:"请前往健康为程序打开权限" , preferredStyle: .alert)
+                    let okAction = UIAlertAction(title: "确定", style: .default, handler:{
+                        (UIAlertAction) -> Void in
+//                        let settingUrl = NSURL(string: UIApplicationOpenSettingsURLString)!
+                    
+                        
+                    })
+                    alterView.addAction(okAction)
+                    self.present(alterView, animated: true, completion: nil)
+                    
+                }
+                
+            })
+            
+        }
+    }
+
     
+  
     
+    fileprivate   func writeCompetence() -> Set<HKQuantityType> {
+        
+        
+        let stepType = HKQuantityType.quantityType(forIdentifier: .stepCount)
+        
+        return Set.init(arrayLiteral: stepType!)
+        
+    }
+    
+    fileprivate   func readCompetence() -> Set<HKQuantityType> {
+        
+        
+        let stepType = HKQuantityType.quantityType(forIdentifier: .stepCount)
+        
+        return Set.init(arrayLiteral: stepType!)
+        
+    }
     
     
 }

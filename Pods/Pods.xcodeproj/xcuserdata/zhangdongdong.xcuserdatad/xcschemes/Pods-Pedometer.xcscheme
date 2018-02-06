@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "E288364AF2F7A756D28DD75D0BB4B727"
+               BlueprintIdentifier = "27C6C8727B88198B17F3BE5653123655"
                BuildableName = "Pods_Pedometer.framework"
                BlueprintName = "Pods-Pedometer"
                ReferencedContainer = "container:Pods.xcodeproj">
@@ -47,7 +47,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "E288364AF2F7A756D28DD75D0BB4B727"
+            BlueprintIdentifier = "27C6C8727B88198B17F3BE5653123655"
             BuildableName = "Pods_Pedometer.framework"
             BlueprintName = "Pods-Pedometer"
             ReferencedContainer = "container:Pods.xcodeproj">
