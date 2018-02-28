@@ -40,6 +40,14 @@ class HomeViewController: UIViewController,UITextFieldDelegate {
 
      func addStepNumerAction(_ sender: UIButton) {
         
+//        DDNotifiacationManager.shareInstance.errorInfo(bodyStr: "步数不能为空");
+//         DDNotifiacationManager.shareInstance.wringInfo(bodyStr: "步数不能为空");
+//        DDNotifiacationManager.shareInstance.successInfo(bodyStr: "步数不能为空");
+//        return
+        
+        
+        
+        
         if (self.stepNumer.text?.isEmpty)! {
             let alterView = UIAlertController.init(title: nil, message: "步数不能为空", preferredStyle: .alert)
             let okAction = UIAlertAction(title: "确定", style: .default, handler:{

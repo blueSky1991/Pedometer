@@ -63,6 +63,8 @@
 		4A6F51A01FC6A2AA00958602 /* FSCalendarAppearance.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A6F517F1FC6A2AA00958602 /* FSCalendarAppearance.m */; };
 		4A6F51A11FC6A2AA00958602 /* FSCalendarAppearance.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A6F517F1FC6A2AA00958602 /* FSCalendarAppearance.m */; };
 		4A71F4981EA74C8F00D4978B /* StepModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A71F4971EA74C8F00D4978B /* StepModel.swift */; };
+		4A807F422046577800E92971 /* DDNotifiacationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A807F412046577700E92971 /* DDNotifiacationManager.swift */; };
+		4A807F462046A35900E92971 /* info.png in Resources */ = {isa = PBXBuildFile; fileRef = 4A807F452046A35900E92971 /* info.png */; };
 		4ABC1FFA1FC27B0F003DBA42 /* BaseNavViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ABC1FF81FC27B0F003DBA42 /* BaseNavViewController.swift */; };
 		4ABC1FFB1FC27B0F003DBA42 /* BaseNavViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4ABC1FF91FC27B0F003DBA42 /* BaseNavViewController.xib */; };
 		4ABC1FFE1FC2ACAC003DBA42 /* SVProgressHUD.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4ABC1FFF1FC2ACAC003DBA42 /* SVProgressHUD.framework */; };
@@ -186,6 +188,8 @@
 		4A6F517E1FC6A2AA00958602 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4A6F517F1FC6A2AA00958602 /* FSCalendarAppearance.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSCalendarAppearance.m; sourceTree = "<group>"; };
 		4A71F4971EA74C8F00D4978B /* StepModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StepModel.swift; sourceTree = "<group>"; };
+		4A807F412046577700E92971 /* DDNotifiacationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DDNotifiacationManager.swift; sourceTree = "<group>"; };
+		4A807F452046A35900E92971 /* info.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = info.png; sourceTree = "<group>"; };
 		4A85598A1FC3C85B006D5E4E /* MyTodayTarget-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MyTodayTarget-Bridging-Header.h"; sourceTree = "<group>"; };
 		4ABC1FF81FC27B0F003DBA42 /* BaseNavViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseNavViewController.swift; sourceTree = "<group>"; };
 		4ABC1FF91FC27B0F003DBA42 /* BaseNavViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BaseNavViewController.xib; sourceTree = "<group>"; };
@@ -437,6 +441,7 @@
 			children = (
 				4A07EDD41E9F56310002389B /* AppDelegate.swift */,
 				4A71F4971EA74C8F00D4978B /* StepModel.swift */,
+				4A807F452046A35900E92971 /* info.png */,
 				4AD2EDC01EA0C2DD00B82CD6 /* icon_28.png */,
 				4AD2EDC11EA0C2DD00B82CD6 /* icon_108.png */,
 				4AD2EDA21EA06F6B00B82CD6 /* icon.png */,
@@ -455,6 +460,7 @@
 				4AD2EDBB1EA0A42000B82CD6 /* SoundPlayer.swift */,
 				4A0E42431EA6029D00EB8BF1 /* UIColor+Extension.swift */,
 				4A2C0B641EC30C3B00BC855C /* UserInfoTool.swift */,
+				4A807F412046577700E92971 /* DDNotifiacationManager.swift */,
 			);
 			name = Tool;
 			sourceTree = "<group>";
@@ -685,6 +691,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4A0E423A1EA5A75700EB8BF1 /* BaseViewController.xib in Resources */,
+				4A807F462046A35900E92971 /* info.png in Resources */,
 				4A0E423E1EA5A8BE00EB8BF1 /* ShowController.xib in Resources */,
 				4AD2EDBA1EA0862C00B82CD6 /* timg.jpeg in Resources */,
 				4A2C0B611EC2FAB700BC855C /* LoginController.xib in Resources */,
@@ -793,6 +800,7 @@
 				4A6768161FC40F02008EABD7 /* PushNotificationManager.m in Sources */,
 				4A6F518E1FC6A2AA00958602 /* FSCalendarScopeHandle.m in Sources */,
 				4A6F519C1FC6A2AA00958602 /* FSCalendarTransitionCoordinator.m in Sources */,
+				4A807F422046577800E92971 /* DDNotifiacationManager.swift in Sources */,
 				4A6F51901FC6A2AA00958602 /* FSCalendarWeekdayView.m in Sources */,
 				4A07EDD71E9F56310002389B /* HomeViewController.swift in Sources */,
 				4A6F51861FC6A2AA00958602 /* FSCalendarCell.m in Sources */,

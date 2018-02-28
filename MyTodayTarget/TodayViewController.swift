@@ -42,14 +42,6 @@ FSCalendarDataSource {
         self.preferredContentSize = CGSize(width: x, height: 100)
         self.stepCount.keyboardType = .numberPad
         self.stepCount.delegate = self as UITextFieldDelegate
-//        self.stepCount.endEditing(false)
-//        self.view.resignFirstResponder()
-//        self.btn.backgroundColor = UIColor.gray
-//        self.btn.isEnabled = false
-        
-//        self.calender.dataSource = self as? FSCalendarDataSource
-//        self.calender.delegate = self as? FSCalendarDelegate
-        
         
     }
     
