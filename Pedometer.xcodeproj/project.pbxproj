@@ -26,6 +26,8 @@
 		4A2C0B631EC30ADF00BC855C /* UserInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A2C0B621EC30ADF00BC855C /* UserInfo.swift */; };
 		4A2C0B651EC30C3B00BC855C /* UserInfoTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A2C0B641EC30C3B00BC855C /* UserInfoTool.swift */; };
 		4A2C0B671EC32BA000BC855C /* register_guide_video.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 4A2C0B661EC32BA000BC855C /* register_guide_video.mp4 */; };
+		4A34275F20478A78001D1C4D /* success.png in Resources */ = {isa = PBXBuildFile; fileRef = 4A34275D20478A78001D1C4D /* success.png */; };
+		4A34276020478A78001D1C4D /* error.png in Resources */ = {isa = PBXBuildFile; fileRef = 4A34275E20478A78001D1C4D /* error.png */; };
 		4A6768161FC40F02008EABD7 /* PushNotificationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A6768151FC40F01008EABD7 /* PushNotificationManager.m */; };
 		4A6768171FC40F02008EABD7 /* PushNotificationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A6768151FC40F01008EABD7 /* PushNotificationManager.m */; };
 		4A6F51801FC6A2AA00958602 /* FSCalendarCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A6F515F1FC6A2AA00958602 /* FSCalendarCollectionView.m */; };
@@ -64,7 +66,7 @@
 		4A6F51A11FC6A2AA00958602 /* FSCalendarAppearance.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A6F517F1FC6A2AA00958602 /* FSCalendarAppearance.m */; };
 		4A71F4981EA74C8F00D4978B /* StepModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A71F4971EA74C8F00D4978B /* StepModel.swift */; };
 		4A807F422046577800E92971 /* DDNotifiacationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A807F412046577700E92971 /* DDNotifiacationManager.swift */; };
-		4A807F462046A35900E92971 /* info.png in Resources */ = {isa = PBXBuildFile; fileRef = 4A807F452046A35900E92971 /* info.png */; };
+		4A807F462046A35900E92971 /* waring.png in Resources */ = {isa = PBXBuildFile; fileRef = 4A807F452046A35900E92971 /* waring.png */; };
 		4ABC1FFA1FC27B0F003DBA42 /* BaseNavViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ABC1FF81FC27B0F003DBA42 /* BaseNavViewController.swift */; };
 		4ABC1FFB1FC27B0F003DBA42 /* BaseNavViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4ABC1FF91FC27B0F003DBA42 /* BaseNavViewController.xib */; };
 		4ABC1FFE1FC2ACAC003DBA42 /* SVProgressHUD.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4ABC1FFF1FC2ACAC003DBA42 /* SVProgressHUD.framework */; };
@@ -151,6 +153,8 @@
 		4A2C0B621EC30ADF00BC855C /* UserInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserInfo.swift; sourceTree = "<group>"; };
 		4A2C0B641EC30C3B00BC855C /* UserInfoTool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserInfoTool.swift; sourceTree = "<group>"; };
 		4A2C0B661EC32BA000BC855C /* register_guide_video.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = register_guide_video.mp4; path = ../register_guide_video.mp4; sourceTree = "<group>"; };
+		4A34275D20478A78001D1C4D /* success.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = success.png; sourceTree = "<group>"; };
+		4A34275E20478A78001D1C4D /* error.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = error.png; sourceTree = "<group>"; };
 		4A67680F1FC40D01008EABD7 /* Pedometer-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Pedometer-Bridging-Header.h"; sourceTree = "<group>"; };
 		4A6768141FC40F01008EABD7 /* PushNotificationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PushNotificationManager.h; sourceTree = "<group>"; };
 		4A6768151FC40F01008EABD7 /* PushNotificationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PushNotificationManager.m; sourceTree = "<group>"; };
@@ -189,7 +193,7 @@
 		4A6F517F1FC6A2AA00958602 /* FSCalendarAppearance.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSCalendarAppearance.m; sourceTree = "<group>"; };
 		4A71F4971EA74C8F00D4978B /* StepModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StepModel.swift; sourceTree = "<group>"; };
 		4A807F412046577700E92971 /* DDNotifiacationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DDNotifiacationManager.swift; sourceTree = "<group>"; };
-		4A807F452046A35900E92971 /* info.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = info.png; sourceTree = "<group>"; };
+		4A807F452046A35900E92971 /* waring.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = waring.png; sourceTree = "<group>"; };
 		4A85598A1FC3C85B006D5E4E /* MyTodayTarget-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MyTodayTarget-Bridging-Header.h"; sourceTree = "<group>"; };
 		4ABC1FF81FC27B0F003DBA42 /* BaseNavViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseNavViewController.swift; sourceTree = "<group>"; };
 		4ABC1FF91FC27B0F003DBA42 /* BaseNavViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BaseNavViewController.xib; sourceTree = "<group>"; };
@@ -441,7 +445,9 @@
 			children = (
 				4A07EDD41E9F56310002389B /* AppDelegate.swift */,
 				4A71F4971EA74C8F00D4978B /* StepModel.swift */,
-				4A807F452046A35900E92971 /* info.png */,
+				4A807F452046A35900E92971 /* waring.png */,
+				4A34275E20478A78001D1C4D /* error.png */,
+				4A34275D20478A78001D1C4D /* success.png */,
 				4AD2EDC01EA0C2DD00B82CD6 /* icon_28.png */,
 				4AD2EDC11EA0C2DD00B82CD6 /* icon_108.png */,
 				4AD2EDA21EA06F6B00B82CD6 /* icon.png */,
@@ -691,12 +697,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				4A0E423A1EA5A75700EB8BF1 /* BaseViewController.xib in Resources */,
-				4A807F462046A35900E92971 /* info.png in Resources */,
+				4A807F462046A35900E92971 /* waring.png in Resources */,
 				4A0E423E1EA5A8BE00EB8BF1 /* ShowController.xib in Resources */,
 				4AD2EDBA1EA0862C00B82CD6 /* timg.jpeg in Resources */,
 				4A2C0B611EC2FAB700BC855C /* LoginController.xib in Resources */,
 				4AD2EDC31EA0C2DD00B82CD6 /* icon_108.png in Resources */,
+				4A34276020478A78001D1C4D /* error.png in Resources */,
 				4AD2EDA31EA06F6B00B82CD6 /* icon.png in Resources */,
+				4A34275F20478A78001D1C4D /* success.png in Resources */,
 				4A07EDDF1E9F56310002389B /* LaunchScreen.storyboard in Resources */,
 				4AE8BC621EC4647E00139843 /* view_bg.jpg in Resources */,
 				4A07EDDC1E9F56310002389B /* Assets.xcassets in Resources */,

@@ -10,10 +10,10 @@ import UIKit
 
 class DDNotifiacationManager: UIView {
     
-    var showView : UIView?
-    var showLabel : UILabel?
-    var showImage : UIImageView?
-    
+   private var showView  : UIView?
+   private var showLabel : UILabel?
+   private var showImage : UIImageView?
+   private var ViewHeight = 80
     
     // 创建单例
     static var shareInstance:DDNotifiacationManager{
@@ -24,50 +24,42 @@ class DDNotifiacationManager: UIView {
     }
     
     
-    
-    
-    
     // 警告提示信息
     func wringInfo(bodyStr:String) {
-        alertInfoShow(bodyStr: bodyStr, backgroundColor: UIColor.yellow)
         
+        alertInfoShow(bodyStr: bodyStr, backgroundColor: UIColor.yellow, imageName: "waring.png", delay: 2)
     }
 
     // 错误提示信息
     func errorInfo(bodyStr:String) {
-       alertInfoShow(bodyStr: bodyStr, backgroundColor: UIColor.red)
-        
+        alertInfoShow(bodyStr: bodyStr, backgroundColor: UIColor.red, imageName: "error.png", delay: 2.5)
     }
     
 
     // 成功提示信息
     func successInfo(bodyStr:String) {
-       alertInfoShow(bodyStr: bodyStr, backgroundColor: UIColor.white)
+        alertInfoShow(bodyStr: bodyStr, backgroundColor: UIColor.white, imageName: "success.png", delay: 2)
     }
 
     
-    func alertInfoShow(bodyStr:String,backgroundColor:UIColor) {
+    private func alertInfoShow(bodyStr:String,backgroundColor:UIColor,imageName:String,delay:CGFloat){
         
-         self.showView = UIView.init(frame: CGRect(x: 0, y: -80, width: UIScreen.main.bounds.size.width, height: 80))
-         self.showLabel = UILabel.init(frame: CGRect(x: 80, y: 0, width: UIScreen.main.bounds.size.width-80, height: 80))
-         self.showImage = UIImageView.init(frame: CGRect(x: 0, y: 20, width: 40, height: 40))
-        self.showImage?.image  = UIImage(named: "info.png");
-         self.showView?.addSubview(self.showLabel!)
-         self.showView?.addSubview(self.showImage!)
-         UIApplication.shared.keyWindow?.addSubview(self.showView!);
+        self.showView = UIView.init(frame: CGRect(x: 0, y: -ViewHeight, width: Int(UIScreen.main.bounds.size.width), height: ViewHeight))
+        self.showLabel = UILabel.init(frame: CGRect(x: ViewHeight, y: 0, width:Int(UIScreen.main.bounds.size.width) - ViewHeight, height: ViewHeight))
+        self.showImage = UIImageView.init(frame: CGRect(x: 0, y: 20, width: ViewHeight/2, height: ViewHeight/2))
+        self.showImage?.image  = UIImage(named: imageName);
+        self.showView?.addSubview(self.showLabel!)
+        self.showView?.addSubview(self.showImage!)
+        UIApplication.shared.keyWindow?.addSubview(self.showView!);
         
-        
-        
-        
-        
-         self.showView?.backgroundColor = backgroundColor;
-         self.showLabel?.text = bodyStr;
+        self.showView?.backgroundColor = backgroundColor;
+        self.showLabel?.text = bodyStr;
         
         UIView.animate(withDuration: 0.5) {
-            self.showView?.transform = CGAffineTransform.init(translationX: 0, y: 80);
-            UIView.animate(withDuration: 0.5, delay: 2, options: UIViewAnimationOptions(rawValue: 0)
+            self.showView?.transform = CGAffineTransform.init(translationX: 0, y: CGFloat(self.ViewHeight));
+            UIView.animate(withDuration: 0.5, delay: TimeInterval(delay), options: UIViewAnimationOptions(rawValue: 0)
                 , animations: {
-                    self.showView?.transform = CGAffineTransform.init(translationX: 0, y: -80);
+                    self.showView?.transform = CGAffineTransform.init(translationX: 0, y: CGFloat(-self.ViewHeight));
             }, completion: { (finish:Bool) in
                 self.showView?.removeFromSuperview();
                 self.showView = nil;
@@ -76,6 +68,9 @@ class DDNotifiacationManager: UIView {
             })
             
         }
-    }
 
+        
+        
+    }
+    
 }

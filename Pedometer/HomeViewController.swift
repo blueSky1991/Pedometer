@@ -40,13 +40,7 @@ class HomeViewController: UIViewController,UITextFieldDelegate {
 
      func addStepNumerAction(_ sender: UIButton) {
         
-//        DDNotifiacationManager.shareInstance.errorInfo(bodyStr: "步数不能为空");
-//         DDNotifiacationManager.shareInstance.wringInfo(bodyStr: "步数不能为空");
-//        DDNotifiacationManager.shareInstance.successInfo(bodyStr: "步数不能为空");
-//        return
-        
-        
-        
+
         
         if (self.stepNumer.text?.isEmpty)! {
             let alterView = UIAlertController.init(title: nil, message: "步数不能为空", preferredStyle: .alert)
@@ -75,9 +69,7 @@ class HomeViewController: UIViewController,UITextFieldDelegate {
                         
                         DispatchQueue.main.async {
                             
-                             
-                         PushNotificationManager.sharedInstance().normalPushNotification(withTitle: "提示", subTitle: "今日目标", body: "啦啦啦", identifier: "stepCount", timeInterval: 70, repeat: false)
-
+                    DDNotifiacationManager.shareInstance.successInfo(bodyStr: "步数添加成功");
 
                         }
 
