@@ -33,23 +33,16 @@ class SoundPlayer: NSObject,AVSpeechSynthesizerDelegate {
     var player:AVSpeechSynthesizer?
 
     static var shareInstance: SoundPlayer {
-        
         struct Static {
-            
-            static let instance: SoundPlayer = SoundPlayer()
+            static let instance : SoundPlayer = SoundPlayer()
         }
-        
         return Static.instance
     }
-    
     private override init() {}
-
-    
 }
 
 extension SoundPlayer{
 
-    
     //播放文字
     func play(string:String) -> Void {
         if !(string.isEmpty) {
@@ -64,7 +57,6 @@ extension SoundPlayer{
             self.player?.speak(utterance)
         }
 
-        
     }
     //停止播放
     func stopSpeaking() -> Void {

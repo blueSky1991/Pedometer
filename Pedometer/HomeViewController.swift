@@ -40,16 +40,8 @@ class HomeViewController: UIViewController,UITextFieldDelegate {
 
      func addStepNumerAction(_ sender: UIButton) {
         
-
-        
         if (self.stepNumer.text?.isEmpty)! {
-            let alterView = UIAlertController.init(title: nil, message: "步数不能为空", preferredStyle: .alert)
-            let okAction = UIAlertAction(title: "确定", style: .default, handler:{
-                (UIAlertAction) -> Void in
-                self.stepNumer.text = ""
-            })
-            alterView.addAction(okAction)
-            self.present(alterView, animated: true, completion: nil)
+            DDNotifiacationManager.shareInstance.wringInfo(bodyStr: "步数不能为空");
             return
         }
         
@@ -58,42 +50,24 @@ class HomeViewController: UIViewController,UITextFieldDelegate {
         let stepType = HKQuantityType.quantityType(forIdentifier: .stepCount)
         if HKHealthStore.isHealthDataAvailable() {
             
-                let stepQuantity = HKQuantity.init(unit: HKUnit.count(), doubleValue: Double(self.stepNumer.text!)!)
+        let stepQuantity = HKQuantity.init(unit: HKUnit.count(), doubleValue: Double(self.stepNumer.text!)!)
     
-                 let stepSample = HKQuantitySample.init(type: stepType!, quantity: stepQuantity, start: Date.init(timeIntervalSinceNow: -15*60), end: Date.init())
+        let stepSample = HKQuantitySample.init(type: stepType!, quantity: stepQuantity, start: Date.init(timeIntervalSinceNow: -15*60), end: Date.init())
             
 
-                 self.healthStore?.save(stepSample, withCompletion: { (success, error) in
+        self.healthStore?.save(stepSample, withCompletion: { (success, error) in
                     
-                    if success {
-                        
-                        DispatchQueue.main.async {
-                            
-                    DDNotifiacationManager.shareInstance.successInfo(bodyStr: "步数添加成功");
-
+        if success {
+            DispatchQueue.main.async {
+            DDNotifiacationManager.shareInstance.successInfo(bodyStr: "步数添加成功");
+            }
+            }else{
+            DispatchQueue.main.async {
+            DDNotifiacationManager.shareInstance.errorInfo(bodyStr: error.debugDescription);
                         }
-
-                    
-                    }else{
-                    
-                        DispatchQueue.main.async {
-                            
-                            let alterView = UIAlertController.init(title:"", message:error.debugDescription , preferredStyle: .alert)
-                            
-                            let okAction = UIAlertAction(title: "确定", style: .default, handler:{
-                                (UIAlertAction) -> Void in
-                                
-                            })
-                            
-                            alterView.addAction(okAction)
-                            self.present(alterView, animated: true, completion: nil)
-                            
-                        }
-
-                    
                     }
                     
-                 })
+            })
         }
         
     }

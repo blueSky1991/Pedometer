@@ -20,7 +20,6 @@
 		4A0E423E1EA5A8BE00EB8BF1 /* ShowController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4A0E423C1EA5A8BE00EB8BF1 /* ShowController.xib */; };
 		4A0E42401EA5AA3500EB8BF1 /* CirclePercentageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A0E423F1EA5AA3500EB8BF1 /* CirclePercentageView.swift */; };
 		4A0E42441EA6029D00EB8BF1 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A0E42431EA6029D00EB8BF1 /* UIColor+Extension.swift */; };
-		4A17E0121EC1528900048D7F /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A17E0111EC1528900048D7F /* HealthKit.framework */; settings = {ATTRIBUTES = (Required, ); }; };
 		4A2C0B601EC2FAB700BC855C /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A2C0B5E1EC2FAB700BC855C /* LoginController.swift */; };
 		4A2C0B611EC2FAB700BC855C /* LoginController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4A2C0B5F1EC2FAB700BC855C /* LoginController.xib */; };
 		4A2C0B631EC30ADF00BC855C /* UserInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A2C0B621EC30ADF00BC855C /* UserInfo.swift */; };
@@ -28,42 +27,23 @@
 		4A2C0B671EC32BA000BC855C /* register_guide_video.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 4A2C0B661EC32BA000BC855C /* register_guide_video.mp4 */; };
 		4A34275F20478A78001D1C4D /* success.png in Resources */ = {isa = PBXBuildFile; fileRef = 4A34275D20478A78001D1C4D /* success.png */; };
 		4A34276020478A78001D1C4D /* error.png in Resources */ = {isa = PBXBuildFile; fileRef = 4A34275E20478A78001D1C4D /* error.png */; };
-		4A6768161FC40F02008EABD7 /* PushNotificationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A6768151FC40F01008EABD7 /* PushNotificationManager.m */; };
-		4A6768171FC40F02008EABD7 /* PushNotificationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A6768151FC40F01008EABD7 /* PushNotificationManager.m */; };
 		4A6F51801FC6A2AA00958602 /* FSCalendarCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A6F515F1FC6A2AA00958602 /* FSCalendarCollectionView.m */; };
-		4A6F51811FC6A2AA00958602 /* FSCalendarCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A6F515F1FC6A2AA00958602 /* FSCalendarCollectionView.m */; };
 		4A6F51821FC6A2AA00958602 /* FSCalendarDelegationProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A6F51631FC6A2AA00958602 /* FSCalendarDelegationProxy.m */; };
-		4A6F51831FC6A2AA00958602 /* FSCalendarDelegationProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A6F51631FC6A2AA00958602 /* FSCalendarDelegationProxy.m */; };
 		4A6F51841FC6A2AA00958602 /* FSCalendarDelegationFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A6F51651FC6A2AA00958602 /* FSCalendarDelegationFactory.m */; };
-		4A6F51851FC6A2AA00958602 /* FSCalendarDelegationFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A6F51651FC6A2AA00958602 /* FSCalendarDelegationFactory.m */; };
 		4A6F51861FC6A2AA00958602 /* FSCalendarCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A6F516B1FC6A2AA00958602 /* FSCalendarCell.m */; };
-		4A6F51871FC6A2AA00958602 /* FSCalendarCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A6F516B1FC6A2AA00958602 /* FSCalendarCell.m */; };
 		4A6F51881FC6A2AA00958602 /* FSCalendarStickyHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A6F516C1FC6A2AA00958602 /* FSCalendarStickyHeader.m */; };
-		4A6F51891FC6A2AA00958602 /* FSCalendarStickyHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A6F516C1FC6A2AA00958602 /* FSCalendarStickyHeader.m */; };
 		4A6F518A1FC6A2AA00958602 /* FSCalendar.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A6F516D1FC6A2AA00958602 /* FSCalendar.m */; };
-		4A6F518B1FC6A2AA00958602 /* FSCalendar.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A6F516D1FC6A2AA00958602 /* FSCalendar.m */; };
 		4A6F518C1FC6A2AA00958602 /* FSCalendarCollectionViewLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A6F516E1FC6A2AA00958602 /* FSCalendarCollectionViewLayout.m */; };
-		4A6F518D1FC6A2AA00958602 /* FSCalendarCollectionViewLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A6F516E1FC6A2AA00958602 /* FSCalendarCollectionViewLayout.m */; };
 		4A6F518E1FC6A2AA00958602 /* FSCalendarScopeHandle.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A6F516F1FC6A2AA00958602 /* FSCalendarScopeHandle.m */; };
-		4A6F518F1FC6A2AA00958602 /* FSCalendarScopeHandle.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A6F516F1FC6A2AA00958602 /* FSCalendarScopeHandle.m */; };
 		4A6F51901FC6A2AA00958602 /* FSCalendarWeekdayView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A6F51701FC6A2AA00958602 /* FSCalendarWeekdayView.m */; };
-		4A6F51911FC6A2AA00958602 /* FSCalendarWeekdayView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A6F51701FC6A2AA00958602 /* FSCalendarWeekdayView.m */; };
 		4A6F51921FC6A2AA00958602 /* FSCalendarExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A6F51741FC6A2AA00958602 /* FSCalendarExtensions.m */; };
-		4A6F51931FC6A2AA00958602 /* FSCalendarExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A6F51741FC6A2AA00958602 /* FSCalendarExtensions.m */; };
 		4A6F51941FC6A2AA00958602 /* FSCalendar+Deprecated.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A6F51761FC6A2AA00958602 /* FSCalendar+Deprecated.m */; };
-		4A6F51951FC6A2AA00958602 /* FSCalendar+Deprecated.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A6F51761FC6A2AA00958602 /* FSCalendar+Deprecated.m */; };
 		4A6F51961FC6A2AA00958602 /* FSCalendarConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A6F51771FC6A2AA00958602 /* FSCalendarConstants.m */; };
-		4A6F51971FC6A2AA00958602 /* FSCalendarConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A6F51771FC6A2AA00958602 /* FSCalendarConstants.m */; };
 		4A6F51981FC6A2AA00958602 /* FSCalendarCalculator.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A6F51781FC6A2AA00958602 /* FSCalendarCalculator.m */; };
-		4A6F51991FC6A2AA00958602 /* FSCalendarCalculator.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A6F51781FC6A2AA00958602 /* FSCalendarCalculator.m */; };
 		4A6F519A1FC6A2AA00958602 /* FSCalendarHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A6F51791FC6A2AA00958602 /* FSCalendarHeaderView.m */; };
-		4A6F519B1FC6A2AA00958602 /* FSCalendarHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A6F51791FC6A2AA00958602 /* FSCalendarHeaderView.m */; };
 		4A6F519C1FC6A2AA00958602 /* FSCalendarTransitionCoordinator.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A6F517D1FC6A2AA00958602 /* FSCalendarTransitionCoordinator.m */; };
-		4A6F519D1FC6A2AA00958602 /* FSCalendarTransitionCoordinator.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A6F517D1FC6A2AA00958602 /* FSCalendarTransitionCoordinator.m */; };
 		4A6F519E1FC6A2AA00958602 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4A6F517E1FC6A2AA00958602 /* Info.plist */; };
-		4A6F519F1FC6A2AA00958602 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4A6F517E1FC6A2AA00958602 /* Info.plist */; };
 		4A6F51A01FC6A2AA00958602 /* FSCalendarAppearance.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A6F517F1FC6A2AA00958602 /* FSCalendarAppearance.m */; };
-		4A6F51A11FC6A2AA00958602 /* FSCalendarAppearance.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A6F517F1FC6A2AA00958602 /* FSCalendarAppearance.m */; };
 		4A71F4981EA74C8F00D4978B /* StepModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A71F4971EA74C8F00D4978B /* StepModel.swift */; };
 		4A807F422046577800E92971 /* DDNotifiacationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A807F412046577700E92971 /* DDNotifiacationManager.swift */; };
 		4A807F462046A35900E92971 /* waring.png in Resources */ = {isa = PBXBuildFile; fileRef = 4A807F452046A35900E92971 /* waring.png */; };
@@ -72,10 +52,6 @@
 		4ABC1FFE1FC2ACAC003DBA42 /* SVProgressHUD.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4ABC1FFF1FC2ACAC003DBA42 /* SVProgressHUD.framework */; };
 		4ABC20001FC2ACB7003DBA42 /* Photos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4ABC1FFD1FC2ACA1003DBA42 /* Photos.framework */; };
 		4ABC20011FC2ACBF003DBA42 /* PhotosUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4ABC1FFC1FC2ACA1003DBA42 /* PhotosUI.framework */; };
-		4ABC201C1FC2DC75003DBA42 /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4ABC201B1FC2DC75003DBA42 /* NotificationCenter.framework */; };
-		4ABC201F1FC2DC75003DBA42 /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ABC201E1FC2DC75003DBA42 /* TodayViewController.swift */; };
-		4ABC20221FC2DC75003DBA42 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4ABC20201FC2DC75003DBA42 /* MainInterface.storyboard */; };
-		4ABC20261FC2DC75003DBA42 /* MyTodayTarget.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 4ABC201A1FC2DC75003DBA42 /* MyTodayTarget.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		4ABE39991EADD59A001D979D /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4ABE39981EADD59A001D979D /* AVFoundation.framework */; settings = {ATTRIBUTES = (Required, ); }; };
 		4AD2EDA31EA06F6B00B82CD6 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 4AD2EDA21EA06F6B00B82CD6 /* icon.png */; };
 		4AD2EDBA1EA0862C00B82CD6 /* timg.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 4AD2EDB91EA0862C00B82CD6 /* timg.jpeg */; };
@@ -101,13 +77,6 @@
 			remoteGlobalIDString = 4A07EDD01E9F56310002389B;
 			remoteInfo = Pedometer;
 		};
-		4ABC20241FC2DC75003DBA42 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 4A07EDC91E9F56310002389B /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 4ABC20191FC2DC75003DBA42;
-			remoteInfo = MyTodayTarget;
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -117,7 +86,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
-				4ABC20261FC2DC75003DBA42 /* MyTodayTarget.appex in Embed App Extensions */,
 			);
 			name = "Embed App Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -147,7 +115,6 @@
 		4A0E423F1EA5AA3500EB8BF1 /* CirclePercentageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CirclePercentageView.swift; sourceTree = "<group>"; };
 		4A0E42431EA6029D00EB8BF1 /* UIColor+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
 		4A17E0101EC1528900048D7F /* Pedometer.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; name = Pedometer.entitlements; path = ../Pedometer.entitlements; sourceTree = "<group>"; };
-		4A17E0111EC1528900048D7F /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
 		4A2C0B5E1EC2FAB700BC855C /* LoginController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
 		4A2C0B5F1EC2FAB700BC855C /* LoginController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginController.xib; sourceTree = "<group>"; };
 		4A2C0B621EC30ADF00BC855C /* UserInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserInfo.swift; sourceTree = "<group>"; };
@@ -155,9 +122,6 @@
 		4A2C0B661EC32BA000BC855C /* register_guide_video.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = register_guide_video.mp4; path = ../register_guide_video.mp4; sourceTree = "<group>"; };
 		4A34275D20478A78001D1C4D /* success.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = success.png; sourceTree = "<group>"; };
 		4A34275E20478A78001D1C4D /* error.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = error.png; sourceTree = "<group>"; };
-		4A67680F1FC40D01008EABD7 /* Pedometer-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Pedometer-Bridging-Header.h"; sourceTree = "<group>"; };
-		4A6768141FC40F01008EABD7 /* PushNotificationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PushNotificationManager.h; sourceTree = "<group>"; };
-		4A6768151FC40F01008EABD7 /* PushNotificationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PushNotificationManager.m; sourceTree = "<group>"; };
 		4A6F515F1FC6A2AA00958602 /* FSCalendarCollectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSCalendarCollectionView.m; sourceTree = "<group>"; };
 		4A6F51601FC6A2AA00958602 /* FSCalendarWeekdayView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSCalendarWeekdayView.h; sourceTree = "<group>"; };
 		4A6F51611FC6A2AA00958602 /* FSCalendarCollectionViewLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSCalendarCollectionViewLayout.h; sourceTree = "<group>"; };
@@ -194,7 +158,6 @@
 		4A71F4971EA74C8F00D4978B /* StepModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StepModel.swift; sourceTree = "<group>"; };
 		4A807F412046577700E92971 /* DDNotifiacationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DDNotifiacationManager.swift; sourceTree = "<group>"; };
 		4A807F452046A35900E92971 /* waring.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = waring.png; sourceTree = "<group>"; };
-		4A85598A1FC3C85B006D5E4E /* MyTodayTarget-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MyTodayTarget-Bridging-Header.h"; sourceTree = "<group>"; };
 		4ABC1FF81FC27B0F003DBA42 /* BaseNavViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseNavViewController.swift; sourceTree = "<group>"; };
 		4ABC1FF91FC27B0F003DBA42 /* BaseNavViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BaseNavViewController.xib; sourceTree = "<group>"; };
 		4ABC1FFC1FC2ACA1003DBA42 /* PhotosUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PhotosUI.framework; path = System/Library/Frameworks/PhotosUI.framework; sourceTree = SDKROOT; };
@@ -203,11 +166,7 @@
 		4ABC200A1FC2D018003DBA42 /* ActionRequestHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionRequestHandler.swift; sourceTree = "<group>"; };
 		4ABC200C1FC2D018003DBA42 /* Action.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = Action.js; sourceTree = "<group>"; };
 		4ABC200E1FC2D018003DBA42 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4ABC201A1FC2DC75003DBA42 /* MyTodayTarget.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = MyTodayTarget.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		4ABC201B1FC2DC75003DBA42 /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
-		4ABC201E1FC2DC75003DBA42 /* TodayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayViewController.swift; sourceTree = "<group>"; };
-		4ABC20211FC2DC75003DBA42 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
-		4ABC20231FC2DC75003DBA42 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4ABE39981EADD59A001D979D /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		4AD2EDA21EA06F6B00B82CD6 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
 		4AD2EDB91EA0862C00B82CD6 /* timg.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = timg.jpeg; sourceTree = "<group>"; };
@@ -215,7 +174,6 @@
 		4AD2EDC01EA0C2DD00B82CD6 /* icon_28.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_28.png; sourceTree = "<group>"; };
 		4AD2EDC11EA0C2DD00B82CD6 /* icon_108.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_108.png; sourceTree = "<group>"; };
 		4AE8BC611EC4647E00139843 /* view_bg.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = view_bg.jpg; sourceTree = "<group>"; };
-		4AEC76321FC2E301002CA21F /* MyTodayTarget.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MyTodayTarget.entitlements; sourceTree = "<group>"; };
 		D9DF360CE904D846303C34F9 /* Pods-Pedometer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pedometer.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Pedometer/Pods-Pedometer.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -228,7 +186,6 @@
 				4ABC20001FC2ACB7003DBA42 /* Photos.framework in Frameworks */,
 				4ABC1FFE1FC2ACAC003DBA42 /* SVProgressHUD.framework in Frameworks */,
 				4ABE39991EADD59A001D979D /* AVFoundation.framework in Frameworks */,
-				4A17E0121EC1528900048D7F /* HealthKit.framework in Frameworks */,
 				F6DD440A36FE6179A67F817F /* Pods_Pedometer.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -247,14 +204,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		4ABC20171FC2DC75003DBA42 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				4ABC201C1FC2DC75003DBA42 /* NotificationCenter.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -265,7 +214,6 @@
 				4A07EDE81E9F56320002389B /* PedometerTests */,
 				4A07EDF31E9F56320002389B /* PedometerUITests */,
 				4ABC20091FC2D018003DBA42 /* PedometerAction */,
-				4ABC201D1FC2DC75003DBA42 /* MyTodayTarget */,
 				4A07EDD21E9F56310002389B /* Products */,
 				4A07EE051E9F89580002389B /* Frameworks */,
 				A58AF54E0509A82C5D90F5E6 /* Pods */,
@@ -278,7 +226,6 @@
 				4A07EDD11E9F56310002389B /* Pedometer.app */,
 				4A07EDE51E9F56320002389B /* PedometerTests.xctest */,
 				4A07EDF01E9F56320002389B /* PedometerUITests.xctest */,
-				4ABC201A1FC2DC75003DBA42 /* MyTodayTarget.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -322,7 +269,6 @@
 				4ABC1FFF1FC2ACAC003DBA42 /* SVProgressHUD.framework */,
 				4ABC1FFD1FC2ACA1003DBA42 /* Photos.framework */,
 				4ABC1FFC1FC2ACA1003DBA42 /* PhotosUI.framework */,
-				4A17E0111EC1528900048D7F /* HealthKit.framework */,
 				4ABE39981EADD59A001D979D /* AVFoundation.framework */,
 				3E8C12ACBA28F9EF16091634 /* Pods_Pedometer.framework */,
 				4ABC201B1FC2DC75003DBA42 /* NotificationCenter.framework */,
@@ -334,7 +280,6 @@
 			isa = PBXGroup;
 			children = (
 				4A0E42351EA5A6B300EB8BF1 /* View */,
-				4A0E42341EA5A69800EB8BF1 /* Model */,
 				4A0E42331EA5A68200EB8BF1 /* Controller */,
 			);
 			path = ShowView;
@@ -347,13 +292,6 @@
 				4A0E423C1EA5A8BE00EB8BF1 /* ShowController.xib */,
 			);
 			path = Controller;
-			sourceTree = "<group>";
-		};
-		4A0E42341EA5A69800EB8BF1 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
 			sourceTree = "<group>";
 		};
 		4A0E42351EA5A6B300EB8BF1 /* View */ = {
@@ -423,21 +361,6 @@
 				4ABC200E1FC2D018003DBA42 /* Info.plist */,
 			);
 			path = PedometerAction;
-			sourceTree = "<group>";
-		};
-		4ABC201D1FC2DC75003DBA42 /* MyTodayTarget */ = {
-			isa = PBXGroup;
-			children = (
-				4AEC76321FC2E301002CA21F /* MyTodayTarget.entitlements */,
-				4ABC201E1FC2DC75003DBA42 /* TodayViewController.swift */,
-				4A6768141FC40F01008EABD7 /* PushNotificationManager.h */,
-				4A6768151FC40F01008EABD7 /* PushNotificationManager.m */,
-				4ABC20201FC2DC75003DBA42 /* MainInterface.storyboard */,
-				4ABC20231FC2DC75003DBA42 /* Info.plist */,
-				4A85598A1FC3C85B006D5E4E /* MyTodayTarget-Bridging-Header.h */,
-				4A67680F1FC40D01008EABD7 /* Pedometer-Bridging-Header.h */,
-			);
-			path = MyTodayTarget;
 			sourceTree = "<group>";
 		};
 		4AD2EDBF1EA0C1F500B82CD6 /* Other */ = {
@@ -558,7 +481,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				4ABC20251FC2DC75003DBA42 /* PBXTargetDependency */,
 			);
 			name = Pedometer;
 			productName = Pedometer;
@@ -601,23 +523,6 @@
 			productReference = 4A07EDF01E9F56320002389B /* PedometerUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
-		4ABC20191FC2DC75003DBA42 /* MyTodayTarget */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 4ABC20271FC2DC75003DBA42 /* Build configuration list for PBXNativeTarget "MyTodayTarget" */;
-			buildPhases = (
-				4ABC20161FC2DC75003DBA42 /* Sources */,
-				4ABC20171FC2DC75003DBA42 /* Frameworks */,
-				4ABC20181FC2DC75003DBA42 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = MyTodayTarget;
-			productName = MyTodayTarget;
-			productReference = 4ABC201A1FC2DC75003DBA42 /* MyTodayTarget.appex */;
-			productType = "com.apple.product-type.app-extension";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -630,15 +535,15 @@
 				TargetAttributes = {
 					4A07EDD01E9F56310002389B = {
 						CreatedOnToolsVersion = 8.3.1;
-						DevelopmentTeam = B88A47T8S4;
+						DevelopmentTeam = BQ7F5XB2U3;
 						LastSwiftMigration = 0910;
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.ApplicationGroups.iOS = {
-								enabled = 1;
+								enabled = 0;
 							};
 							com.apple.HealthKit = {
-								enabled = 1;
+								enabled = 0;
 							};
 							com.apple.HomeKit = {
 								enabled = 0;
@@ -656,17 +561,6 @@
 						DevelopmentTeam = BQ7F5XB2U3;
 						ProvisioningStyle = Automatic;
 						TestTargetID = 4A07EDD01E9F56310002389B;
-					};
-					4ABC20191FC2DC75003DBA42 = {
-						CreatedOnToolsVersion = 9.1;
-						DevelopmentTeam = B88A47T8S4;
-						LastSwiftMigration = 0910;
-						ProvisioningStyle = Automatic;
-						SystemCapabilities = {
-							com.apple.ApplicationGroups.iOS = {
-								enabled = 1;
-							};
-						};
 					};
 				};
 			};
@@ -686,7 +580,6 @@
 				4A07EDD01E9F56310002389B /* Pedometer */,
 				4A07EDE41E9F56320002389B /* PedometerTests */,
 				4A07EDEF1E9F56320002389B /* PedometerUITests */,
-				4ABC20191FC2DC75003DBA42 /* MyTodayTarget */,
 			);
 		};
 /* End PBXProject section */
@@ -729,15 +622,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		4ABC20181FC2DC75003DBA42 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				4A6F519F1FC6A2AA00958602 /* Info.plist in Resources */,
-				4ABC20221FC2DC75003DBA42 /* MainInterface.storyboard in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
@@ -763,10 +647,12 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Pedometer/Pods-Pedometer-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SVProgressHUD.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -805,7 +691,6 @@
 				4A6F51981FC6A2AA00958602 /* FSCalendarCalculator.m in Sources */,
 				4A71F4981EA74C8F00D4978B /* StepModel.swift in Sources */,
 				4A0E423D1EA5A8BE00EB8BF1 /* ShowController.swift in Sources */,
-				4A6768161FC40F02008EABD7 /* PushNotificationManager.m in Sources */,
 				4A6F518E1FC6A2AA00958602 /* FSCalendarScopeHandle.m in Sources */,
 				4A6F519C1FC6A2AA00958602 /* FSCalendarTransitionCoordinator.m in Sources */,
 				4A807F422046577800E92971 /* DDNotifiacationManager.swift in Sources */,
@@ -849,31 +734,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		4ABC20161FC2DC75003DBA42 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				4A6F51971FC6A2AA00958602 /* FSCalendarConstants.m in Sources */,
-				4A6F51931FC6A2AA00958602 /* FSCalendarExtensions.m in Sources */,
-				4A6F51891FC6A2AA00958602 /* FSCalendarStickyHeader.m in Sources */,
-				4A6F51871FC6A2AA00958602 /* FSCalendarCell.m in Sources */,
-				4A6F518B1FC6A2AA00958602 /* FSCalendar.m in Sources */,
-				4A6F51911FC6A2AA00958602 /* FSCalendarWeekdayView.m in Sources */,
-				4A6F518D1FC6A2AA00958602 /* FSCalendarCollectionViewLayout.m in Sources */,
-				4A6F519D1FC6A2AA00958602 /* FSCalendarTransitionCoordinator.m in Sources */,
-				4ABC201F1FC2DC75003DBA42 /* TodayViewController.swift in Sources */,
-				4A6F519B1FC6A2AA00958602 /* FSCalendarHeaderView.m in Sources */,
-				4A6F51811FC6A2AA00958602 /* FSCalendarCollectionView.m in Sources */,
-				4A6768171FC40F02008EABD7 /* PushNotificationManager.m in Sources */,
-				4A6F51A11FC6A2AA00958602 /* FSCalendarAppearance.m in Sources */,
-				4A6F518F1FC6A2AA00958602 /* FSCalendarScopeHandle.m in Sources */,
-				4A6F51991FC6A2AA00958602 /* FSCalendarCalculator.m in Sources */,
-				4A6F51851FC6A2AA00958602 /* FSCalendarDelegationFactory.m in Sources */,
-				4A6F51831FC6A2AA00958602 /* FSCalendarDelegationProxy.m in Sources */,
-				4A6F51951FC6A2AA00958602 /* FSCalendar+Deprecated.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -887,11 +747,6 @@
 			target = 4A07EDD01E9F56310002389B /* Pedometer */;
 			targetProxy = 4A07EDF11E9F56320002389B /* PBXContainerItemProxy */;
 		};
-		4ABC20251FC2DC75003DBA42 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 4ABC20191FC2DC75003DBA42 /* MyTodayTarget */;
-			targetProxy = 4ABC20241FC2DC75003DBA42 /* PBXContainerItemProxy */;
-		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
@@ -901,14 +756,6 @@
 				4A07EDDE1E9F56310002389B /* Base */,
 			);
 			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-		4ABC20201FC2DC75003DBA42 /* MainInterface.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				4ABC20211FC2DC75003DBA42 /* Base */,
-			);
-			name = MainInterface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -1017,24 +864,25 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = D9DF360CE904D846303C34F9 /* Pods-Pedometer.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ALWAYS_SEARCH_USER_PATHS = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_ENTITLEMENTS = Pedometer/Pedometer.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				DEVELOPMENT_TEAM = B88A47T8S4;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = BQ7F5XB2U3;
 				EMBED_ASSET_PACKS_IN_PRODUCT_BUNDLE = YES;
 				INFOPLIST_FILE = Pedometer/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @loader_path/Frameworks @executable_path/Frameworks @executable_path";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Pedometer/OpenSDK1.7.7",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.zhangdongdong.Pedometer1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.zhangdongdong.Pedometer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "MyTodayTarget/Pedometer-Bridging-Header.h";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -1045,24 +893,25 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 401CCFC123DB1060CA7A018B /* Pods-Pedometer.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ALWAYS_SEARCH_USER_PATHS = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_ENTITLEMENTS = Pedometer/Pedometer.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				DEVELOPMENT_TEAM = B88A47T8S4;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = BQ7F5XB2U3;
 				EMBED_ASSET_PACKS_IN_PRODUCT_BUNDLE = YES;
 				INFOPLIST_FILE = Pedometer/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @loader_path/Frameworks @executable_path/Frameworks @executable_path";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Pedometer/OpenSDK1.7.7",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.zhangdongdong.Pedometer1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.zhangdongdong.Pedometer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "MyTodayTarget/Pedometer-Bridging-Header.h";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -1126,69 +975,6 @@
 			};
 			name = Release;
 		};
-		4ABC20281FC2DC75003DBA42 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
-				CLANG_WARN_COMMA = YES;
-				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
-				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
-				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
-				CLANG_WARN_STRICT_PROTOTYPES = YES;
-				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CODE_SIGN_ENTITLEMENTS = MyTodayTarget/MyTodayTarget.entitlements;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = B88A47T8S4;
-				GCC_C_LANGUAGE_STANDARD = gnu11;
-				INFOPLIST_FILE = MyTodayTarget/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.zhangdongdong.Pedometer1.MyTodayTarget;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
-				SWIFT_OBJC_BRIDGING_HEADER = "MyTodayTarget/MyTodayTarget-Bridging-Header.h";
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = 1;
-				USER_HEADER_SEARCH_PATHS = "${SRCROOT}/**";
-				VALID_ARCHS = "arm64 armv7 armv7s arm64";
-			};
-			name = Debug;
-		};
-		4ABC20291FC2DC75003DBA42 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
-				CLANG_WARN_COMMA = YES;
-				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
-				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
-				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
-				CLANG_WARN_STRICT_PROTOTYPES = YES;
-				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CODE_SIGN_ENTITLEMENTS = MyTodayTarget/MyTodayTarget.entitlements;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = B88A47T8S4;
-				GCC_C_LANGUAGE_STANDARD = gnu11;
-				INFOPLIST_FILE = MyTodayTarget/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.zhangdongdong.Pedometer1.MyTodayTarget;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
-				SWIFT_OBJC_BRIDGING_HEADER = "MyTodayTarget/MyTodayTarget-Bridging-Header.h";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = 1;
-				USER_HEADER_SEARCH_PATHS = "${SRCROOT}/**";
-				VALID_ARCHS = "arm64 armv7 armv7s arm64";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -1224,15 +1010,6 @@
 			buildConfigurations = (
 				4A07EE001E9F56320002389B /* Debug */,
 				4A07EE011E9F56320002389B /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		4ABC20271FC2DC75003DBA42 /* Build configuration list for PBXNativeTarget "MyTodayTarget" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				4ABC20281FC2DC75003DBA42 /* Debug */,
-				4ABC20291FC2DC75003DBA42 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

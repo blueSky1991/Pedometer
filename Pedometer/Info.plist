@@ -74,13 +74,15 @@
 	<string></string>
 	<key>NSMotionUsageDescription</key>
 	<string></string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>APP需要访问你的相册</string>
 	<key>UIApplicationShortcutItems</key>
 	<array>
 		<dict>
 			<key>UIApplicationShortcutItemIconType</key>
 			<string>UIApplicationShortcutIconTypeShare</string>
 			<key>UIApplicationShortcutItemTitle</key>
-			<string>分享&quot;运动&quot;</string>
+			<string>分享"运动"</string>
 			<key>UIApplicationShortcutItemType</key>
 			<string>com.zhangdongdong.share</string>
 			<key>UIApplicationShortcutItemUserInfo</key>
@@ -144,8 +146,6 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
-	<key>NSPhotoLibraryUsageDescription</key>
-	<string>APP需要访问你的相册</string>
 	<key>UISupportedInterfaceOrientations~ipad</key>
 	<array>
 		<string>UIInterfaceOrientationPortrait</string>

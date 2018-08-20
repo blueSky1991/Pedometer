@@ -24,9 +24,9 @@ class DDNotifiacationManager: UIView {
     }
     
     
+    
     // 警告提示信息
     func wringInfo(bodyStr:String) {
-        
         alertInfoShow(bodyStr: bodyStr, backgroundColor: UIColor.yellow, imageName: "waring.png", delay: 2)
     }
 
@@ -46,17 +46,15 @@ class DDNotifiacationManager: UIView {
         
         self.showView = UIView.init(frame: CGRect(x: 0, y: -ViewHeight, width: Int(UIScreen.main.bounds.size.width), height: ViewHeight))
         self.showLabel = UILabel.init(frame: CGRect(x: ViewHeight, y: 0, width:Int(UIScreen.main.bounds.size.width) - ViewHeight, height: ViewHeight))
-        self.showImage = UIImageView.init(frame: CGRect(x: 0, y: 20, width: ViewHeight/2, height: ViewHeight/2))
+        self.showImage = UIImageView.init(frame: CGRect(x: 5, y: 20, width: ViewHeight/2, height: ViewHeight/2))
         self.showImage?.image  = UIImage(named: imageName);
         self.showView?.addSubview(self.showLabel!)
         self.showView?.addSubview(self.showImage!)
         UIApplication.shared.keyWindow?.addSubview(self.showView!);
-        
         self.showView?.backgroundColor = backgroundColor;
         self.showLabel?.text = bodyStr;
-        
         UIView.animate(withDuration: 0.5) {
-            self.showView?.transform = CGAffineTransform.init(translationX: 0, y: CGFloat(self.ViewHeight));
+                    self.showView?.transform = CGAffineTransform.init(translationX: 0, y: CGFloat(self.ViewHeight));
             UIView.animate(withDuration: 0.5, delay: TimeInterval(delay), options: UIViewAnimationOptions(rawValue: 0)
                 , animations: {
                     self.showView?.transform = CGAffineTransform.init(translationX: 0, y: CGFloat(-self.ViewHeight));
